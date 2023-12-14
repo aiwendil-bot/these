@@ -1,0 +1,114 @@
+id_producteur,libelle,adresse_postale,description,tags,mail,rayon_livraison,latitude,longitude
+null,'ADPEP 45 EA La Noue du Bois','25 Bd Jean Jaures, 45000 ORLEANS','L Entreprise Adaptée La Noue du Bois (ADPEP 45) est situé à Dampierre en Burly. Elle emploie des personnes ayant une « reconnaissance en qualité de travailleur handicapé » avec une orientation en milieu de travail. Cette entreprise œuvre sur plusieurs ac','Agriculture biologique  Produits : Légume',null,null,47.90225,1.89319
+null,'ALLAIRE Daniel SAS','Le Bourg, 45460 St Aignan des Gues',null,'Agriculture biologique  Famille : TRANS  Produits : Légume',null,null,47.85154,2.37734
+null,'AgroPaul','Chemin des Maisons Rouges, 41700 Le Controis-en-Sologne','Entreprise familiale de transformation de légumes biologiques en 4ème gamme','Agriculture biologique  Certificat : Bio  Famille : TRANS  Produits : Légume',null,null,47.41906,1.44406
+null,'Anthémis','Route de Marcilly en Gault, 41200 MILLANCAY',null,null,null,null,47.46227,1.86037
+null,'Arlesthis','Pulant, 41370 Marchenoir',null,null,null,null,47.834,1.42053
+null,'Association Atouts et Perspectives','33 Rue des Bourgetteries, 37390 METTRAY','Les 4 Saisons d Atouts constitue l établissement producteur de légumes biologiques géré par l Association Atouts et Perspectives à tout âge.   Situé à Mettray Tours Nord, cette entité s inscrit dans l insertion par l activité économique au service de l e','Agriculture biologique  Certificat : AB  Produits : Légume  Récolte à maturité  Site internet : http://atouts-et-perspectives.fr',null,null,47.44787,0.65831
+null,'Association Le Relais','12 Place de Juranville, 18000 Bourges','Association de solidarité agissant sur l hébergement, l accès aux droits et l insertion professionnelle en chantiers d insertion utilisant des activités comme la maraîchage biologique et la transformation de fruits et légumes comme support.','Agriculture biologique  Produits : Fruit, Légume',null,null,47.08383,2.38898
+null,'Aux Jardins du Soubeau','Le Soubeau, 18570 Morthomiers','Ferme maraîchère, production de fruits et légumes de saison sous serres et en plein champ sur 2ha.','Agriculture biologique  Produits : Fruit, Légume',null,null,47.02592,2.26054
+null,'Aux Légumes Célestes','49 Rue du Grand Orme, 45150 Férolles',null,null,null,null,47.8292,2.13257
+null,'BENOIST Alexandre','Route de Tigy, 45600 VIGLAIN',null,null,null,null,47.73033,2.2964
+null,'BRESLU Antoine','11 rue de la Colombe, 41160 MOISY',null,null,null,null,47.9078,1.3373
+null,'Berry graines','Rifardeaux, 18350 Nérondes',null,'Agriculture biologique  Certificat : Ecpcert  Famille : GROUP  Produits : Céréale  Site internet : http://berrygraines.com',null,null,47.00672,2.78324
+null,'Bio Centre Loire','28 Rte de Saint-Aignan, 41700 Le Controis-en-Sologne','Bio Centre Loire est une coopérative de producteurs 100% Bio qui met en marché les FEL bio issus des fermes adhérentes en région Centre Val de Loire. Créé en 2016 par 7 producteurs, BCL rassemble aujourd hui 36 fermes au profil diversifié. La gamme propo','Agriculture biologique  Certificat : Bio  Famille : GROUP  Produits : Fruit, Légume',null,null,47.41207,1.42482
+null,'CHAMPDAVOINE Baptiste',null,null,null,null,null,null,null
+null,'Domaine de St Gilles','68 Route de Thenay, 41400 Pontlevoy',null,null,null,null,47.39007,1.26551
+null,'EARL ARIBAUD','La Pharmacie, 45150 Férolles',null,'Agriculture biologique  Certificat : Bio  Produits : Légume',null,null,47.82221,2.13358
+null,'EARL BAIGNOUX','Baignoux, 41500 Villexanton',null,null,null,null,47.74679,1.44695
+null,'EARL Biotope','Villerussien, 41500 Maves',null,null,null,null,47.72628,1.37724
+null,'EARL DAVEAU','Bardie, 41370 St Leonard en beauce',null,null,null,null,47.79569,1.44973
+null,'EARL Grésillon','4 Rue des prés, 28310 GOMMERVILLE',null,null,null,null,48.26256,1.82448
+null,'EARL Jean-Baptiste BOURDELOUP','24 Hameau de Lutz, 28150 Éole-en-Beauce','Installé en 2008 sur la ferme familiale en production de céréales (blé tendre, tournesol, lentilles, luzernes) et légumes frais destinés à l industrie, je me suis converti en bio en 2018. J ai développé une nouvelle production de légumes secs pour la ven','Agriculture biologique  Certificat : Bio  Produits : Céréale, Légume  Volonté de produire en agriculture biologique de conservation des sols (limiter le labour et favoriser les couverts végétaux).',null,null,48.23687,1.70929
+null,'EARL LA JONCHERE','138 Route d Ouvrouer, 45110 Sigloy',null,null,null,null,47.83682,2.20775
+null,'EARL LEPAGE Vincent','12 Rue de Chateaudun, 41240 Beauce la Romaine',null,null,null,null,47.95894,1.42998
+null,'EARL Le Champ d Eau','7 Hameau de Bazainville, 45480 GRENEVILLE en BEAUCE',null,null,null,null,48.20146,2.1108
+null,'EARL Les Caves du Lochois','16 Rue de Vautrompeau, 37600 Loches',null,null,null,null,47.11774,0.9977
+null,'EARL Les Epis d Or','6 Rue des Epis d Or, 28800 Neuvy-en-Dunois',null,null,null,null,48.20663,1.54035
+null,'EARL Nouvellon Agri Bio','6 Chemin de Cour-sur-loire, 41500 Mulsans',null,null,null,null,47.68532,1.38956
+null,'EARL Philippe JUMEAU','2 rue Albert CAMUNEAU, 28200 Thiville',null,null,null,null,48.02522,1.37545
+null,'EARL Pontijou','3 Rue des Vouzoirs, 41500 Maves',null,null,null,null,47.73851,1.33528
+null,'EARL S;Guerin','Occonville 17 rue du lion, 28700 Le Gué de Longroi',null,null,null,null,48.48439,1.71553
+null,'EARL Serres Bio Val','257 Rue des Serres, 45590 Saint-Cyr-en-Val',null,null,null,null,47.85284,1.9579
+null,'EARL Vazelle','Vazelle, 41130 Billy',null,null,null,null,47.32802,1.54088
+null,'EARL Zou la Galinette','443 Rue du Parc Floral, 45590 Saint-Cyr-en-Val',null,null,null,null,47.85615,1.94733
+null,'EARL de la Bourgognerie','18 Rue Trianon, 45310 Patay',null,null,null,null,48.04752,1.694
+null,'EARL de la Ferme des 4 Vents','6 rue des 4 Vents, 41500 La Chapelle-Saint-Martin',null,'Agriculture biologique  Certificat : Bio  Produits : Huile, Céréale, Légume',null,null,47.73581,1.4123
+null,'EARL de la Galinette','10 Boisville, 41240 Beauce la Romaine',null,null,null,null,47.97769,1.48812
+null,'EARL de la Varenne','2 Rue du Vignoble, 45300 DADONVILLE',null,'Agriculture biologique  Certificat : Bio  Produits : Céréale',null,null,48.15176,2.23998
+null,'EARL des Ruesses','Les Ruesses, 18380 Presly',null,'Agriculture biologique  Certificat : Bio  Famille : TRANS  Produits : Produit carné, Porc',null,null,47.36531,2.35924
+null,'EARL du Bois Galant','32 Rue Florimond Robertet, 28800 Alluyes',null,null,null,null,48.22875,1.36181
+null,'EARL du Montet','Le Montet, 18120 Méreau',null,null,null,null,47.16129,2.05928
+null,'EARL du Tacre','82 Petite Rue, 45160 Saint-Hilaire-Saint-Mesmin',null,null,null,null,47.85642,1.81091
+null,'EARL la Renardière','5 Faubourg du Parc, 45480 Outarville',null,null,null,null,48.23824,2.05737
+null,'Entraide Berruyère','261 Route de Saint-michel, 18000 Bourges','Association loi 1901 créée en 1984 gérant des ateliers d insertion dont la culture maraîchère en biodynamie et des actions sociales. Son objectif : Aider des personnes en grande difficulté.','Agriculture biologique  Produits : Légume',null,null,47.10417,2.42392
+null,'FONTAINE Jérôme','13 Dommarville, 28800 Sancheville',null,null,null,null,48.17458,1.55641
+null,'Ferme de Léonard','6 Rue des Marronniers, 28220 CLOYES sur LOIR',null,null,null,null,48.02858,1.25552
+null,'Ferme de l Aulnay','Route de Tigy, 45600 Viglain',null,null,null,null,47.73033,2.2964
+null,'Ferme de la Motte','52, rue du Château, 41370 Talcy','La Ferme de la Motte est une entreprise familiale (5 frères et cousins) située à Talcy entre Beauce et Châteaux. Producteur BIO depuis 1997, la ferme produit aujourd hui (avec l aide de ses producteurs partenaires) sur plus de 400 ha BIO en région Centre','Agriculture biologique  Certificat : Bio  Produits : Légume',null,null,47.76771,1.44085
+null,'Fromagerie MAURICE','Bourdel, 37160 NEUILLY LE BRIGNON','Nous fabriquons à la ferme des produits laitiers bio avec le lait récoltés dans un périmètre de 25 km alentour.','Agriculture biologique  Certificat : Bio  Famille : TRANS  Produits : Produit laitier de vache  Site internet : http://www.fromageriemaurice.fr',null,null,46.98735,0.70328
+null,'GABB 18','2701 route d Orléans BP 10, 18230 Saint Doulchard',null,'Agriculture biologique  Certificat : Bio  Famille : GROUP',null,null,47.12782,2.3668
+null,'GAEC Ferme de la Cour','22 Rue Fernand Boulon Seillac, 41190 Valloire sur Cisse',null,'Agriculture biologique  Certificat : Bio  Produits : Légume',null,null,47.54589,1.15491
+null,'GAEC Hofstede','Ferme de la Garenne, 18800 BAUGY',null,'Agriculture biologique  Certificat : Bio  Produits : Céréale, Légume',null,null,47.07474,2.71755
+null,'GAEC St Paul','73 Rue St Jacques, 37600 LOCHES',null,null,null,null,47.13754,0.99957
+null,'GAEC Ste Marie','Domaine Ste Marie des Dués, 45570 Ouzouer sur Loire',null,'Agriculture biologique  Produits : Volaille, Oeuf, Viande bovine, Produit carné  Site internet : http://fermebiosaintemarie.e-monsite.com/',null,null,47.77011,2.48081
+null,'GAEC de la Georgerie','301 chemin de la georgerie, 37360 Rouziers-de-Touraine','La Ferme de la Georgerie est composée d Audrey et Cyrille associés co-gérants et d un salarié à temps partiel.   Nous cultivons des céréales en agriculture biologique sur 120 hectares et transformons nos céréales en farines et pâtes sur la ferme. Nous ap','Agriculture en conversion biologique  Produits : Céréale',null,null,47.51466,0.64476
+null,'GAEC du Chat Blanc','3 rue de champ boulain, 41500 Maves',null,'Agriculture biologique  Certificat : FR-BIO-10  Vente à la ferme  Produits : Céréale  Site internet : https://fr-fr.facebook.com/fermeduchatblanc/',null,null,47.73878,1.36987
+null,'GAEC du Mesnil','11 Onville, 45480 GRENEVILLE en BEAUCE',null,null,null,null,48.20219,2.11049
+null,'GAUTHIER Hugues','5 bis grande rue, 41370 LORGES',null,null,null,null,47.82304,1.49904
+null,'GOUEFFON Alexandre','Les Champarts, 45170 NEUVILLE aux BOIS',null,null,null,null,48.069,2.05299
+null,'HUGUET Emilien','15 Rue des Breluquettes, 41500 Séris',null,null,null,null,47.75938,1.50244
+null,'HUGUET Florentin','21 Chemin de Paris, 41500 Seris',null,null,null,null,47.76245,1.503
+null,'Histoire de fruits','7 Rue des Avanries, 37130 La Chapelle-aux-Naux',null,'Agriculture biologique  Certificat : Bio  Produits : Fruit',null,null,47.30792,0.41856
+null,'ISA Entraide','9 bis Avenue du Général de Gaulle, 18700 Aubigny sur Nère',null,'Agriculture biologique  Produits : Légume  Site internet : http://www.isagroupe.fr',null,null,47.48753,2.43691
+null,'Jean-David LOCHON','5 Place St Georges, 28300 JOUY','Exploitation agricole, producteur de blé dur Bio, transformation de notre Blé dur Bio en pâtes artisanales semi-complètes depuis 2016.','Agriculture biologique  Label : Bio Ecocert  Certificat : Bio  Produits : Céréale',null,null,48.51248,1.5511
+null,'Julie BLESSON-MAHAIS','1 Rue du Presbytère, 41190 SANTENAY','Fabrication de muesli issu de l agriculture biologique.','Agriculture biologique  Certificat : Bio  Famille : TRANS  Produits : Céréale',null,null,47.56624,1.1167
+null,'L Abeille de Sologne','14 Rue des Sautereaux, 41300 Theillay','Eleveur d abeilles par passion, je suis à la tête de 200 ruches et exploite plusieurs ruchers en Sologne et en Berry. Je ne vends que des miels de ma production. Je propose une gamme de 10 miels et autres produits de la ruche certifiées bio.','Agriculture biologique  Produits : Miel  Site internet : http://www.abeilledesologne.fr',null,null,47.31736,2.03573
+null,'LEGRAND Emmanuel','16 Juvrainville, 28200 Villampuy',null,null,null,null,48.01546,1.50346
+null,'LEXTERIAT Loïc','Le Grand Vignol, 36110 Vineuil',null,null,null,null,46.93254,1.67604
+null,'La Ferme de Doublainville','Doublainville, 41240 BEAUCE LA ROMAINE','Jeune producteur installé en agriculture biologique depuis 2022, je produits des patates douce et pommes de terre, céréales et légumineuses.','Agriculture biologique  Certificat : Bio  Produits : Céréale, Légume',null,null,47.89392,1.52856
+null,'La Ferme de Léonard','6 Rue des Marronniers, 28220 Cloyes les 3 rivières','Ferme bio depuis 2017, production de céréales diverses (sarrazin, chanvre, chia...) de légumineuses, et légumes pleins champs (potimarrons, butternuts et autres courges.   Une petite production de courgettes et tomates.','Agriculture biologique  Produits : Céréale, Légume',null,null,48.02858,1.25552
+null,'La Ferme des Perrières','165 Rue des Perrières, 45160 Saint-Hilaire-Saint-Mesmin','Arboriculteur maraîcher depuis 1964 sur une exploitation de 20 ha..','Agriculture biologique  Label : Bio cohérence  Certificat : Bio  Produits : Fruit, Légume',null,null,47.85716,1.83063
+null,'La Ferme du Relais','Le Relais, 36180 PELLEVOISIN','A la Ferme du Relais, nous cultivons des céréales diversifiées dans le respect de l agriculture paysanne et biologique.   Nous transformons nos récoltes sur place en farines écrasées sur meule de pierre, en pains pur levain cuits dans un four à bois et e','Agriculture biologique  Certificat : Bio  Produits : Huile, Céréale',null,null,46.96892,1.421
+null,'La Gauloise Dorée','La Folie Le quartier, 37160 La Celle Saint Avant',null,'Agriculture biologique  Produits : Volaille',null,null,47.03873,0.63178
+null,'La branche à fruits','La Toucherie, 37320 SAINT BRANCHS',null,'Agriculture biologique  Label : Bio cohérence  Vente à la ferme  Produits : Fruit',null,null,47.25423,0.73076
+null,'Laiterie de Verneuil','Les Arcis, 37600 Verneuil sur Indre','Coopérative Touraine Berry, fabrication de beurre, lait et fromage de chèvre.','Agriculture biologique  Produits : Produit laitier de chèvre, Produit laitier de vache  Site internet : http://www.laiterie-de-verneuil.com',null,null,47.06959,1.05077
+null,'Le Grain Libre','5 route du Coudray, 37600 Saint jean Saint Germain','Le Grain Libre, c est un collectif de sept fermes bio du Sud Touraine unies par une envie forte de vivre une aventure commune : apprendre à valoriser nos céréales et à les transformer ensemble.   C est dans l atelier de Saint-Jean-Saint-Germain que les g','Agriculture biologique  N° Siret :80982627400015 N° TVA intracom. :FR53809826274  Produits : Céréale',null,null,47.08125,1.03506
+null,'Le goût des saisons','2013 Route des Forêts, 18110 Saint-Martin-d Auxigny','Paysan maraîcher en agriculture biologique diversifiée. Je cultive sur la commune de St Martin d Auxigny et dans les marais de Bourges. Les cultures sont en places permanentes en agroécologie et un système verger - maraicher.','Agriculture biologique  Certificat : Ecocert  Produits : Fruit, Légume',null,null,47.20702,2.38179
+null,'Le jardin du Breuil','31 Le Breuil aux Gittons, 36700 CLION','Maraicher en agriculture biologique installé depuis juillet 2017 à Clion','Agriculture biologique  Certificat : AB  Produits : Légume',null,null,46.9627,1.18103
+null,'Les Vergers du Closeau','748 Route de Villesavin, 41250 Mont Près Chambord','Nous produisons des fruits à pépins (Pommes principalement et poires) ainsi que des fraises. Une diversification est engagée sur d autres petits fruits (framboises notamment). L ensemble de l exploitation est conduite en respectant le cahier des charges ','Agriculture en conversion biologique  Produits : Fruit, Boisson  Site internet : http://www.lesvergersducloseau.fr',null,null,47.54256,1.45546
+null,'Les jardins de Cocagnes','112 Rue de Bas-rivière, 41000 Blois',null,'Agriculture biologique  Certificat : Bio  Produits : Fruit, Légume  Site internet : http://www.association-biosolidaire.fr',null,null,47.56688,1.32029
+null,'Les jardins de contrat','Roucheux, 37530 Montreuil-en-Touraine',null,'Agriculture biologique  Produits : Fruit, Légume',null,null,47.49279,0.92309
+null,'Louis CAILLEAU','66 Rue de la Motte, 45150 Darvoy',null,'Agriculture biologique  Certificat : Bio  Produits : Fruit, Légume',null,null,47.85621,2.07235
+null,'Loïc COSSET','16 bis Bel Air, 36500 CHEZELLES','Maraîcher bio depuis 2014, je produis des fruits et légumes traditionnels. J ai également choisi de me diversifier en produisant du raisin de table.   Je cultive une surface de 8ha de légumes et 2ha20 de raisin de table.','Agriculture biologique  Produits : Fruit, Légume',null,null,46.88536,1.57245
+null,'MINEC-DUBE Jérôme','555 Route de Saint-Jean de Braye, 45400 Semoy','Installé depuis 2014 sur une petite surface de 1.5 ha en production de légumes et fruits bio.','Agriculture biologique  Certificat : Bio  Produits : Fruit, Légume',null,null,47.93029,1.95672
+null,'MORINEAU Xavier','Villeramard, 41500 Maves',null,null,null,null,47.65143,1.42323
+null,'Négo Beauce','5 La Frileuse, 28140 Orgères-en-Beauce',null,null,null,null,48.13642,1.67489
+null,'POTHIER Sylvain','Hameau de Loupille, 28140 Péronville',null,null,null,null,48.04598,1.59163
+null,'Porcs Bio du Centre','Gorgeat, 41100 Azé','Créée en 2008 la SARL «PORCS BIO DU CENTRE» comprend un groupe d éleveurs de porcs, des charcutiers dont un titulaire du titre de « Maître Artisan ». Cette réunion témoigne de l attachement et de l engagement ancien des associés dans des valeurs d authen','Agriculture biologique  Certificat : Bio  Famille : TRANS  Produits : Agneau, Viande bovine, Produit carné, Porc',null,null,47.84412,1.00846
+null,'Provinces Bio - Relais Vert','71 Boulevard Alfred Nobel, 44400 Rezé',null,null,null,null,47.15938,-1.55337
+null,'SAMYN Frédéric','8 Les Tresseaux, 41330 Averdon',null,null,null,null,47.69941,1.29609
+null,'SARL FFBIO','Lieu dit Chatenay, 28140 Bazoches en Dunois',null,null,null,null,48.10241,1.58875
+null,'SARL La Porte Dorée','32 Route de Fougères, 41700 CHEVERNY','Transformation de fruits et légumes bio depuis 2011 à nos marques (Conserverie de Cheverny, Confiturerie de Cheverny, Confibio) et pour le compte de maraîchers et arboriculteurs locaux.','Agriculture biologique  Certificat : Bio  Famille : TRANS  Produits : Fruit, Confiture',null,null,47.44415,1.44302
+null,'SARL Saute Mouton','Forcelles, 45510 TIGY','Exploitation familiale en polyculture-élevage 100% bio depuis 1996, sous label bio cohérence, avec une activité d accueil pédagogique à destination de tous les publics.','Agriculture biologique  Label : Bio cohérence  Produits : Légume  Site internet : http://www.saute-mouton.net',null,null,47.81666,2.16286
+null,'SAS Brasserie Sancerroise','258 Route d Amigny, 18300 Sancerre','A la recherche d une bière artisanale à Sancerre ?   Nos bières sont toutes brassées localement dans le Centre de la France à Sancerre, selon d anciennes recettes, toutes différentes les unes des autres, ainsi nous vous donnons le choix entre :    Infusi','Agriculture biologique  Certificat : Bio  Produits : Boisson',null,null,47.32949,2.82986
+null,'SAS Domaine du Coudray','Le Coudray, 18290 Civray',null,'Agriculture biologique  Certificat : Bio  Produits : Céréale',null,null,46.97963,2.19955
+null,'SASU Ju Nature','10 Rue du Petit Bois Ferme de la Paternelle, 37390 METTRAY','Céréalier Bio sur 184ha sur la commune de Mettray avec une activité de transformation à la ferme (huiles, lentilles, plats préparés) et une activité de compostage.','Agriculture biologique  Certificat : Bio  Vente à la ferme  Produits : Huile, Céréale  Site internet : https://www.leschampsdejulien.com/',null,null,47.45049,0.65888
+null,'SCEA Ferme des Montmartins','D 72 Les Montmartins, 41350 SAINT CLAUDE DE DIRAY',null,null,null,null,47.60482,1.42151
+null,'SCEA L Orée de la Brenne','Maisons Sinaud, 36700 Arpheuilles',null,null,null,null,46.91396,1.25348
+null,'SCEA La Croix des Vignes','27 Rue de Beaugency, 41290 Oucques La Nouvelle',null,null,null,null,47.8228,1.30242
+null,'SCEA La Tibiodaire','4 Le Parc de la Thibaudiere, 37120 Courcoué',null,'Agriculture biologique  Certificat : Bio  Produits : Huile, Céréale',null,null,47.01582,0.38425
+null,'SCEA Le Petit Bergeresse','Le Petit de Bergeresse, 45510 VIENNE en VAL',null,null,null,null,47.78367,2.14434
+null,'SCEA Les Fourmis Vertes','7 Rue de la Vacquerie, 41000 Blois',null,null,null,null,47.57238,1.33778
+null,'SCEA Les Vergers','Petit Biche, 41370 Saint-Léonard-en-Beauce',null,null,null,null,47.80865,1.38591
+null,'SCEA Obi','14 Rue du Bout Hallé, 41500 Séris',null,null,null,null,47.75628,1.50071
+null,'SCEA de Villardeau','Lieu Dit Villardeau, 18340 Senneçay',null,'Agriculture biologique  Certificat : Bio  Produits : Légume',null,null,46.9498,2.43192
+null,'SCEA de la Croix de Guignas','21 Chemin de Paris, 41500 Seris',null,null,null,null,47.76245,1.503
+null,'SCEA la Croix des Vignes','27 Rue de Beaugency, 41290 Oucques La Nouvelle',null,null,null,null,47.8228,1.30242
+null,'Saint Cyr Bio Val','257 Rue des Serres, 45590 Saint-Cyr-en-Val',null,null,null,null,47.85284,1.9579
+null,'Ternao','5 rue Pierre et Marie Curie INGRE, 45140 Saint Jean de la Ruelle',null,'Agriculture biologique  Famille : XXX  Produits : Fruit, Légume',null,null,47.46367,-0.66414
+null,'Terra Cérès','17 rue des Entrepreneurs, 41700 Le Controis en Sologne',null,'Agriculture biologique  Certificat : Bio  Famille : TRANS  Site internet : https://terraceres.bio/',null,null,47.43248,1.44636
+null,'Terres Dormes','11 Les Bordes, 41100 ROCE',null,null,null,null,47.81274,1.16543
+null,'Terres d Excellences','8 Rue de Mérangle, 28500 Germainville','Exploitation agricole de 263 hectares en polyculture élevage et labelisée en agriculture biologique, la Ferme de Germainville possède un troupeau de vaches Angus d un peu plus de 200 animaux élevés uniquement à l herbe.   La ferme cultive sur l autre par','Agriculture biologique  Certificat : Bio  Produits : Huile, Céréale, Viande bovine, Produit carné',null,null,48.74069,1.48035
+null,'Thomas GANEM','Les Hézeaux, 45360 Saint-Firmin-sur-Loire',null,'Agriculture biologique  Certificat : Bio  Produits : Légume',null,null,47.5977,2.67714
+null,'Val Bio Centre','27bis Rue des Ponts Chartrains, 41000 Blois',null,'Agriculture biologique  Certificat : Bio  Produits : Boisson non alcoolisée, Huile, Céréale, Oeuf, Fruit, Confiture, Aromate, Légume, Boisson',null,null,47.58404,1.34278

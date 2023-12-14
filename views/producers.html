@@ -1,0 +1,2424 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4ad6497c8b461f2bb86757069edc7d11 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4ad6497c8b461f2bb86757069edc7d11" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4ad6497c8b461f2bb86757069edc7d11 = L.map(
+                "map_4ad6497c8b461f2bb86757069edc7d11",
+                {
+                    center: [47.383333, 0.683333],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_777adcf10d0755f079fe578fe2a5da22 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_777adcf10d0755f079fe578fe2a5da22.addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+            var circle_marker_19a0ee2edbc063aae14b573186dc7a71 = L.circleMarker(
+                [47.90225, 1.89319],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_2c76dd524afbc18b212f177bb769ab31 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_15125b34a5077cf1c641bee9fca9dc19 = $(`<div id="html_15125b34a5077cf1c641bee9fca9dc19" style="width: 100.0%; height: 100.0%;">1	'ADPEP 45 EA La Noue du Bois'	47.90225	1.89319	</div>`)[0];
+                popup_2c76dd524afbc18b212f177bb769ab31.setContent(html_15125b34a5077cf1c641bee9fca9dc19);
+            
+        
+
+        circle_marker_19a0ee2edbc063aae14b573186dc7a71.bindPopup(popup_2c76dd524afbc18b212f177bb769ab31)
+        ;
+
+        
+    
+    
+            var circle_marker_84e156313f70e4e499a2e58f18157a13 = L.circleMarker(
+                [47.85154, 2.37734],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_fc5717a78755cddd83089dda17d46f6a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ac93ab0c2c09df2bc8c3aee7846c5b0 = $(`<div id="html_1ac93ab0c2c09df2bc8c3aee7846c5b0" style="width: 100.0%; height: 100.0%;">2	'ALLAIRE Daniel SAS'	47.85154	2.37734	</div>`)[0];
+                popup_fc5717a78755cddd83089dda17d46f6a.setContent(html_1ac93ab0c2c09df2bc8c3aee7846c5b0);
+            
+        
+
+        circle_marker_84e156313f70e4e499a2e58f18157a13.bindPopup(popup_fc5717a78755cddd83089dda17d46f6a)
+        ;
+
+        
+    
+    
+            var circle_marker_7450f5e11dc699123344403974248895 = L.circleMarker(
+                [47.41906, 1.44406],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_0fd9cf82f5d991f1929aabd729de3083 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_51cf0332bb44a389d8ba79e7f7fd682c = $(`<div id="html_51cf0332bb44a389d8ba79e7f7fd682c" style="width: 100.0%; height: 100.0%;">3	'AgroPaul'	47.41906	1.44406	</div>`)[0];
+                popup_0fd9cf82f5d991f1929aabd729de3083.setContent(html_51cf0332bb44a389d8ba79e7f7fd682c);
+            
+        
+
+        circle_marker_7450f5e11dc699123344403974248895.bindPopup(popup_0fd9cf82f5d991f1929aabd729de3083)
+        ;
+
+        
+    
+    
+            var circle_marker_f4941d62903108940335d15c683b568e = L.circleMarker(
+                [47.46227, 1.86037],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_8be965306ed1e5e5fc56121f22cf5103 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7032a6c5d7fb0b23e52d1c9767abf42d = $(`<div id="html_7032a6c5d7fb0b23e52d1c9767abf42d" style="width: 100.0%; height: 100.0%;">4	'Anthémis'	47.46227	1.86037	</div>`)[0];
+                popup_8be965306ed1e5e5fc56121f22cf5103.setContent(html_7032a6c5d7fb0b23e52d1c9767abf42d);
+            
+        
+
+        circle_marker_f4941d62903108940335d15c683b568e.bindPopup(popup_8be965306ed1e5e5fc56121f22cf5103)
+        ;
+
+        
+    
+    
+            var circle_marker_0394054c352ee9fcf41922927852ca40 = L.circleMarker(
+                [47.834, 1.42053],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_c93dc55d06ea84cf4769874cfd3c435a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e26db8c76b4a6a7ae174937e7e2e72f = $(`<div id="html_9e26db8c76b4a6a7ae174937e7e2e72f" style="width: 100.0%; height: 100.0%;">5	'Arlesthis'	47.834	1.42053	</div>`)[0];
+                popup_c93dc55d06ea84cf4769874cfd3c435a.setContent(html_9e26db8c76b4a6a7ae174937e7e2e72f);
+            
+        
+
+        circle_marker_0394054c352ee9fcf41922927852ca40.bindPopup(popup_c93dc55d06ea84cf4769874cfd3c435a)
+        ;
+
+        
+    
+    
+            var circle_marker_8a19fced759694637dda90fae8945673 = L.circleMarker(
+                [47.44787, 0.65831],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_a57cffb19dc3659907b5b8a909233bd6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_634ddb723feeaf12eafd1eedd5ce124f = $(`<div id="html_634ddb723feeaf12eafd1eedd5ce124f" style="width: 100.0%; height: 100.0%;">6	'Association Atouts et Perspectives'	47.44787	0.65831	</div>`)[0];
+                popup_a57cffb19dc3659907b5b8a909233bd6.setContent(html_634ddb723feeaf12eafd1eedd5ce124f);
+            
+        
+
+        circle_marker_8a19fced759694637dda90fae8945673.bindPopup(popup_a57cffb19dc3659907b5b8a909233bd6)
+        ;
+
+        
+    
+    
+            var circle_marker_77c5230bad20b231ab53010c3ab099e7 = L.circleMarker(
+                [47.08383, 2.38898],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_6df857f996eca743615c243fc7cde367 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_906b1d31148d2b089c4f24768a4b799d = $(`<div id="html_906b1d31148d2b089c4f24768a4b799d" style="width: 100.0%; height: 100.0%;">7	'Association Le Relais'	47.08383	2.38898	</div>`)[0];
+                popup_6df857f996eca743615c243fc7cde367.setContent(html_906b1d31148d2b089c4f24768a4b799d);
+            
+        
+
+        circle_marker_77c5230bad20b231ab53010c3ab099e7.bindPopup(popup_6df857f996eca743615c243fc7cde367)
+        ;
+
+        
+    
+    
+            var circle_marker_73f9ff96d0ae3c5654cc7e3e6a7956b1 = L.circleMarker(
+                [47.02592, 2.26054],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_cdecb78fb12ffc46f799c4f442cb28d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb34125da4e8359286ab6840bb926afe = $(`<div id="html_eb34125da4e8359286ab6840bb926afe" style="width: 100.0%; height: 100.0%;">8	'Aux Jardins du Soubeau'	47.02592	2.26054	</div>`)[0];
+                popup_cdecb78fb12ffc46f799c4f442cb28d2.setContent(html_eb34125da4e8359286ab6840bb926afe);
+            
+        
+
+        circle_marker_73f9ff96d0ae3c5654cc7e3e6a7956b1.bindPopup(popup_cdecb78fb12ffc46f799c4f442cb28d2)
+        ;
+
+        
+    
+    
+            var circle_marker_7d2d45f675411e6e02eaf90fe114e5da = L.circleMarker(
+                [47.8292, 2.13257],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_717f86fc8a9d3a7ea6ed63f75ff7f73a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c21bd14814221784cdd62cabef55015 = $(`<div id="html_8c21bd14814221784cdd62cabef55015" style="width: 100.0%; height: 100.0%;">9	'Aux Légumes Célestes'	47.8292	2.13257	</div>`)[0];
+                popup_717f86fc8a9d3a7ea6ed63f75ff7f73a.setContent(html_8c21bd14814221784cdd62cabef55015);
+            
+        
+
+        circle_marker_7d2d45f675411e6e02eaf90fe114e5da.bindPopup(popup_717f86fc8a9d3a7ea6ed63f75ff7f73a)
+        ;
+
+        
+    
+    
+            var circle_marker_703d37bb2a82400e19c1687d7fcc120d = L.circleMarker(
+                [47.73033, 2.2964],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_87cf9d561832925d37068ee3856880fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2aa51427174c11bbd79e812ee15120bd = $(`<div id="html_2aa51427174c11bbd79e812ee15120bd" style="width: 100.0%; height: 100.0%;">10	'BENOIST Alexandre'	47.73033	2.2964	</div>`)[0];
+                popup_87cf9d561832925d37068ee3856880fb.setContent(html_2aa51427174c11bbd79e812ee15120bd);
+            
+        
+
+        circle_marker_703d37bb2a82400e19c1687d7fcc120d.bindPopup(popup_87cf9d561832925d37068ee3856880fb)
+        ;
+
+        
+    
+    
+            var circle_marker_5e445a8f5c325e3aba14e9a61bc32e17 = L.circleMarker(
+                [47.9078, 1.3373],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_7ebe97a7484b6d1d4aa39fc5f379ea7c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4696028031f19f14053a197bf5262fe4 = $(`<div id="html_4696028031f19f14053a197bf5262fe4" style="width: 100.0%; height: 100.0%;">11	'BRESLU Antoine'	47.9078	1.3373	</div>`)[0];
+                popup_7ebe97a7484b6d1d4aa39fc5f379ea7c.setContent(html_4696028031f19f14053a197bf5262fe4);
+            
+        
+
+        circle_marker_5e445a8f5c325e3aba14e9a61bc32e17.bindPopup(popup_7ebe97a7484b6d1d4aa39fc5f379ea7c)
+        ;
+
+        
+    
+    
+            var circle_marker_003ef0df203db73bd8bba133891b3edf = L.circleMarker(
+                [47.00672, 2.78324],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_30aca0d941caf107968cfc87b7cd99cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_abb9cef29f5e0714455ff8e2fba37942 = $(`<div id="html_abb9cef29f5e0714455ff8e2fba37942" style="width: 100.0%; height: 100.0%;">12	'Berry graines'	47.00672	2.78324	</div>`)[0];
+                popup_30aca0d941caf107968cfc87b7cd99cb.setContent(html_abb9cef29f5e0714455ff8e2fba37942);
+            
+        
+
+        circle_marker_003ef0df203db73bd8bba133891b3edf.bindPopup(popup_30aca0d941caf107968cfc87b7cd99cb)
+        ;
+
+        
+    
+    
+            var circle_marker_7c039f1fd3379ab86bf46b7cd0888309 = L.circleMarker(
+                [47.41207, 1.42482],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_1818acf39396283855ba2c2c6eb8b352 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_15d8c6b613af55303317d7c37ec8acaa = $(`<div id="html_15d8c6b613af55303317d7c37ec8acaa" style="width: 100.0%; height: 100.0%;">13	'Bio Centre Loire'	47.41207	1.42482	</div>`)[0];
+                popup_1818acf39396283855ba2c2c6eb8b352.setContent(html_15d8c6b613af55303317d7c37ec8acaa);
+            
+        
+
+        circle_marker_7c039f1fd3379ab86bf46b7cd0888309.bindPopup(popup_1818acf39396283855ba2c2c6eb8b352)
+        ;
+
+        
+    
+    
+            var circle_marker_120646feec85a1538bd9517520c788db = L.circleMarker(
+                [47.39007, 1.26551],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_2c603982b297aba048e7dd894b312356 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d6d608e2e60d6063aa1560ca03728d7c = $(`<div id="html_d6d608e2e60d6063aa1560ca03728d7c" style="width: 100.0%; height: 100.0%;">14	'Domaine de St Gilles'	47.39007	1.26551	</div>`)[0];
+                popup_2c603982b297aba048e7dd894b312356.setContent(html_d6d608e2e60d6063aa1560ca03728d7c);
+            
+        
+
+        circle_marker_120646feec85a1538bd9517520c788db.bindPopup(popup_2c603982b297aba048e7dd894b312356)
+        ;
+
+        
+    
+    
+            var circle_marker_726bd6034fcbc262b0dc8cba6604e210 = L.circleMarker(
+                [47.82221, 2.13358],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_8f617cb867fa562100c263d9edbdf3f8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d5c5e9a111f15ee165313ac9dd42430e = $(`<div id="html_d5c5e9a111f15ee165313ac9dd42430e" style="width: 100.0%; height: 100.0%;">15	'EARL ARIBAUD'	47.82221	2.13358	</div>`)[0];
+                popup_8f617cb867fa562100c263d9edbdf3f8.setContent(html_d5c5e9a111f15ee165313ac9dd42430e);
+            
+        
+
+        circle_marker_726bd6034fcbc262b0dc8cba6604e210.bindPopup(popup_8f617cb867fa562100c263d9edbdf3f8)
+        ;
+
+        
+    
+    
+            var circle_marker_cfb2c0bd69ce20e36d13e1851f85d351 = L.circleMarker(
+                [47.74679, 1.44695],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_e94504c2601eb43597249232613440c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_faed203055039defe4c5d40b9973727a = $(`<div id="html_faed203055039defe4c5d40b9973727a" style="width: 100.0%; height: 100.0%;">16	'EARL BAIGNOUX'	47.74679	1.44695	</div>`)[0];
+                popup_e94504c2601eb43597249232613440c7.setContent(html_faed203055039defe4c5d40b9973727a);
+            
+        
+
+        circle_marker_cfb2c0bd69ce20e36d13e1851f85d351.bindPopup(popup_e94504c2601eb43597249232613440c7)
+        ;
+
+        
+    
+    
+            var circle_marker_5a370db07ec596e32edfac5aa0ee940c = L.circleMarker(
+                [47.72628, 1.37724],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_1693b00ffa757aed90252d49fa11ffc4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6dd418b80017eb7e680e228d0937c294 = $(`<div id="html_6dd418b80017eb7e680e228d0937c294" style="width: 100.0%; height: 100.0%;">17	'EARL Biotope'	47.72628	1.37724	</div>`)[0];
+                popup_1693b00ffa757aed90252d49fa11ffc4.setContent(html_6dd418b80017eb7e680e228d0937c294);
+            
+        
+
+        circle_marker_5a370db07ec596e32edfac5aa0ee940c.bindPopup(popup_1693b00ffa757aed90252d49fa11ffc4)
+        ;
+
+        
+    
+    
+            var circle_marker_feb112ce0f9c7b0875fecdc46dabb6ce = L.circleMarker(
+                [47.79569, 1.44973],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_def216813681ce798c54a23886b84122 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ce703ff6e8d9b0c2287b78706affe6b = $(`<div id="html_8ce703ff6e8d9b0c2287b78706affe6b" style="width: 100.0%; height: 100.0%;">18	'EARL DAVEAU'	47.79569	1.44973	</div>`)[0];
+                popup_def216813681ce798c54a23886b84122.setContent(html_8ce703ff6e8d9b0c2287b78706affe6b);
+            
+        
+
+        circle_marker_feb112ce0f9c7b0875fecdc46dabb6ce.bindPopup(popup_def216813681ce798c54a23886b84122)
+        ;
+
+        
+    
+    
+            var circle_marker_d6266e851a25b69b939b7043cb04233e = L.circleMarker(
+                [48.26256, 1.82448],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_d8f04022947cfcb9bf17f3818ef84f74 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_371afb630ffc685b725fce785a95c628 = $(`<div id="html_371afb630ffc685b725fce785a95c628" style="width: 100.0%; height: 100.0%;">19	'EARL Grésillon'	48.26256	1.82448	</div>`)[0];
+                popup_d8f04022947cfcb9bf17f3818ef84f74.setContent(html_371afb630ffc685b725fce785a95c628);
+            
+        
+
+        circle_marker_d6266e851a25b69b939b7043cb04233e.bindPopup(popup_d8f04022947cfcb9bf17f3818ef84f74)
+        ;
+
+        
+    
+    
+            var circle_marker_e9b67adbf3824939f7015ac56d0fa777 = L.circleMarker(
+                [48.23687, 1.70929],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_cfe50ac3ef8e9d40151b37bf360f5740 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d734f0ea43f01e77f7310994411c1974 = $(`<div id="html_d734f0ea43f01e77f7310994411c1974" style="width: 100.0%; height: 100.0%;">20	'EARL Jean-Baptiste BOURDELOUP'	48.23687	1.70929	</div>`)[0];
+                popup_cfe50ac3ef8e9d40151b37bf360f5740.setContent(html_d734f0ea43f01e77f7310994411c1974);
+            
+        
+
+        circle_marker_e9b67adbf3824939f7015ac56d0fa777.bindPopup(popup_cfe50ac3ef8e9d40151b37bf360f5740)
+        ;
+
+        
+    
+    
+            var circle_marker_bdec8d01b58180ea1013606eae3c4f31 = L.circleMarker(
+                [47.83682, 2.20775],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_01a5c5215c52defc0131676bc5fa2681 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87b782b2be058d18192f9e4cc66d0959 = $(`<div id="html_87b782b2be058d18192f9e4cc66d0959" style="width: 100.0%; height: 100.0%;">21	'EARL LA JONCHERE'	47.83682	2.20775	</div>`)[0];
+                popup_01a5c5215c52defc0131676bc5fa2681.setContent(html_87b782b2be058d18192f9e4cc66d0959);
+            
+        
+
+        circle_marker_bdec8d01b58180ea1013606eae3c4f31.bindPopup(popup_01a5c5215c52defc0131676bc5fa2681)
+        ;
+
+        
+    
+    
+            var circle_marker_2e438d75f4c77528b9486cb4dea11cb6 = L.circleMarker(
+                [47.95894, 1.42998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_d1b8823cb12e5ce1a201e0c816c0b667 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5125b5e575008f437881443194fefce6 = $(`<div id="html_5125b5e575008f437881443194fefce6" style="width: 100.0%; height: 100.0%;">22	'EARL LEPAGE Vincent'	47.95894	1.42998	</div>`)[0];
+                popup_d1b8823cb12e5ce1a201e0c816c0b667.setContent(html_5125b5e575008f437881443194fefce6);
+            
+        
+
+        circle_marker_2e438d75f4c77528b9486cb4dea11cb6.bindPopup(popup_d1b8823cb12e5ce1a201e0c816c0b667)
+        ;
+
+        
+    
+    
+            var circle_marker_a9f781907dbf086a029a373449a4f720 = L.circleMarker(
+                [48.20146, 2.1108],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_47879d6466e5df8d94c109b52ff21915 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9b0f0881290fe20f983ff27d209b9775 = $(`<div id="html_9b0f0881290fe20f983ff27d209b9775" style="width: 100.0%; height: 100.0%;">23	'EARL Le Champ d Eau'	48.20146	2.1108	</div>`)[0];
+                popup_47879d6466e5df8d94c109b52ff21915.setContent(html_9b0f0881290fe20f983ff27d209b9775);
+            
+        
+
+        circle_marker_a9f781907dbf086a029a373449a4f720.bindPopup(popup_47879d6466e5df8d94c109b52ff21915)
+        ;
+
+        
+    
+    
+            var circle_marker_b2eefc307c39ed5b40e5c8b385d9de04 = L.circleMarker(
+                [47.11774, 0.9977],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_a36ae11e0a98521c0126e4361f4eeffe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_99c2133f6ce8220eab4f4a5a38107ec3 = $(`<div id="html_99c2133f6ce8220eab4f4a5a38107ec3" style="width: 100.0%; height: 100.0%;">24	'EARL Les Caves du Lochois'	47.11774	0.9977	</div>`)[0];
+                popup_a36ae11e0a98521c0126e4361f4eeffe.setContent(html_99c2133f6ce8220eab4f4a5a38107ec3);
+            
+        
+
+        circle_marker_b2eefc307c39ed5b40e5c8b385d9de04.bindPopup(popup_a36ae11e0a98521c0126e4361f4eeffe)
+        ;
+
+        
+    
+    
+            var circle_marker_73489f6fab777a3b2a3a58b137d7579a = L.circleMarker(
+                [48.20663, 1.54035],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_60446ac2b7d1eda57e754496996082a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8e690ec5712fe0a27420b902ae56e86 = $(`<div id="html_c8e690ec5712fe0a27420b902ae56e86" style="width: 100.0%; height: 100.0%;">25	'EARL Les Epis d Or'	48.20663	1.54035	</div>`)[0];
+                popup_60446ac2b7d1eda57e754496996082a4.setContent(html_c8e690ec5712fe0a27420b902ae56e86);
+            
+        
+
+        circle_marker_73489f6fab777a3b2a3a58b137d7579a.bindPopup(popup_60446ac2b7d1eda57e754496996082a4)
+        ;
+
+        
+    
+    
+            var circle_marker_4b4639b9852d2f1a5f85c3b0d0a85b67 = L.circleMarker(
+                [47.68532, 1.38956],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_a587fd46a7bdd02ebaf25bc42e7d4906 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6edd76d923fbb1dcbbe6c8f5dfcd75bb = $(`<div id="html_6edd76d923fbb1dcbbe6c8f5dfcd75bb" style="width: 100.0%; height: 100.0%;">26	'EARL Nouvellon Agri Bio'	47.68532	1.38956	</div>`)[0];
+                popup_a587fd46a7bdd02ebaf25bc42e7d4906.setContent(html_6edd76d923fbb1dcbbe6c8f5dfcd75bb);
+            
+        
+
+        circle_marker_4b4639b9852d2f1a5f85c3b0d0a85b67.bindPopup(popup_a587fd46a7bdd02ebaf25bc42e7d4906)
+        ;
+
+        
+    
+    
+            var circle_marker_eeb124fe8dc64d832414798ba8cdf2f8 = L.circleMarker(
+                [48.02522, 1.37545],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_3f497140a4286b638a86e09868227344 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c7f6201c231bbf2ec8b15e1171a73f4 = $(`<div id="html_9c7f6201c231bbf2ec8b15e1171a73f4" style="width: 100.0%; height: 100.0%;">27	'EARL Philippe JUMEAU'	48.02522	1.37545	</div>`)[0];
+                popup_3f497140a4286b638a86e09868227344.setContent(html_9c7f6201c231bbf2ec8b15e1171a73f4);
+            
+        
+
+        circle_marker_eeb124fe8dc64d832414798ba8cdf2f8.bindPopup(popup_3f497140a4286b638a86e09868227344)
+        ;
+
+        
+    
+    
+            var circle_marker_d4bf214b3b63ad1c4df4d1ca681fc630 = L.circleMarker(
+                [47.73851, 1.33528],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_b9c0c372e60b233634c801abe6d3fd26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b0cc6ec4322fdf1a4f4f0761b54f14c0 = $(`<div id="html_b0cc6ec4322fdf1a4f4f0761b54f14c0" style="width: 100.0%; height: 100.0%;">28	'EARL Pontijou'	47.73851	1.33528	</div>`)[0];
+                popup_b9c0c372e60b233634c801abe6d3fd26.setContent(html_b0cc6ec4322fdf1a4f4f0761b54f14c0);
+            
+        
+
+        circle_marker_d4bf214b3b63ad1c4df4d1ca681fc630.bindPopup(popup_b9c0c372e60b233634c801abe6d3fd26)
+        ;
+
+        
+    
+    
+            var circle_marker_6e4694baaf88438a424324da4f0ec150 = L.circleMarker(
+                [48.48439, 1.71553],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_2c5988750cec3f92a9d1d9d204d5571e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25305e9f5a1ffa7e6f88f92d53b25c8d = $(`<div id="html_25305e9f5a1ffa7e6f88f92d53b25c8d" style="width: 100.0%; height: 100.0%;">29	'EARL S;Guerin'	48.48439	1.71553	</div>`)[0];
+                popup_2c5988750cec3f92a9d1d9d204d5571e.setContent(html_25305e9f5a1ffa7e6f88f92d53b25c8d);
+            
+        
+
+        circle_marker_6e4694baaf88438a424324da4f0ec150.bindPopup(popup_2c5988750cec3f92a9d1d9d204d5571e)
+        ;
+
+        
+    
+    
+            var circle_marker_3ec4e32bad3529999e3c01bbb57fed9a = L.circleMarker(
+                [47.85284, 1.9579],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_08e20a8a5392c7d9fd6ddf72fc9fc266 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a64244a94539546042b4ff579b218c7 = $(`<div id="html_9a64244a94539546042b4ff579b218c7" style="width: 100.0%; height: 100.0%;">30	'EARL Serres Bio Val'	47.85284	1.9579	</div>`)[0];
+                popup_08e20a8a5392c7d9fd6ddf72fc9fc266.setContent(html_9a64244a94539546042b4ff579b218c7);
+            
+        
+
+        circle_marker_3ec4e32bad3529999e3c01bbb57fed9a.bindPopup(popup_08e20a8a5392c7d9fd6ddf72fc9fc266)
+        ;
+
+        
+    
+    
+            var circle_marker_d03fe3cb6ba0c33267ea7c288364e421 = L.circleMarker(
+                [47.32802, 1.54088],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_014451d32906f86e98f62901470fe8e0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bc4ed6a2fd1f593cdb156ef26d67a551 = $(`<div id="html_bc4ed6a2fd1f593cdb156ef26d67a551" style="width: 100.0%; height: 100.0%;">31	'EARL Vazelle'	47.32802	1.54088	</div>`)[0];
+                popup_014451d32906f86e98f62901470fe8e0.setContent(html_bc4ed6a2fd1f593cdb156ef26d67a551);
+            
+        
+
+        circle_marker_d03fe3cb6ba0c33267ea7c288364e421.bindPopup(popup_014451d32906f86e98f62901470fe8e0)
+        ;
+
+        
+    
+    
+            var circle_marker_095bf632b8e83c7cf6b6c1f59ec320c1 = L.circleMarker(
+                [47.85615, 1.94733],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_1d0e01c7cc8f2576785af9833553898e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_413c2ef89f9e1849d86a6d014997aee4 = $(`<div id="html_413c2ef89f9e1849d86a6d014997aee4" style="width: 100.0%; height: 100.0%;">32	'EARL Zou la Galinette'	47.85615	1.94733	</div>`)[0];
+                popup_1d0e01c7cc8f2576785af9833553898e.setContent(html_413c2ef89f9e1849d86a6d014997aee4);
+            
+        
+
+        circle_marker_095bf632b8e83c7cf6b6c1f59ec320c1.bindPopup(popup_1d0e01c7cc8f2576785af9833553898e)
+        ;
+
+        
+    
+    
+            var circle_marker_39820f878f0fbe98fde585061102de0f = L.circleMarker(
+                [48.04752, 1.694],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_f174be8d5f37e40861299d3383464c59 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62f5561a6e3202926bf22c007eb4f2f0 = $(`<div id="html_62f5561a6e3202926bf22c007eb4f2f0" style="width: 100.0%; height: 100.0%;">33	'EARL de la Bourgognerie'	48.04752	1.694	</div>`)[0];
+                popup_f174be8d5f37e40861299d3383464c59.setContent(html_62f5561a6e3202926bf22c007eb4f2f0);
+            
+        
+
+        circle_marker_39820f878f0fbe98fde585061102de0f.bindPopup(popup_f174be8d5f37e40861299d3383464c59)
+        ;
+
+        
+    
+    
+            var circle_marker_34d13a3674d8a2f6500b2118eea236df = L.circleMarker(
+                [47.73581, 1.4123],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_60fd25b5c7cfc4ef4dd6a36775da0837 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_afa3e6796fe4914753f13df2a374cc52 = $(`<div id="html_afa3e6796fe4914753f13df2a374cc52" style="width: 100.0%; height: 100.0%;">34	'EARL de la Ferme des 4 Vents'	47.73581	1.4123	</div>`)[0];
+                popup_60fd25b5c7cfc4ef4dd6a36775da0837.setContent(html_afa3e6796fe4914753f13df2a374cc52);
+            
+        
+
+        circle_marker_34d13a3674d8a2f6500b2118eea236df.bindPopup(popup_60fd25b5c7cfc4ef4dd6a36775da0837)
+        ;
+
+        
+    
+    
+            var circle_marker_8204c21ac77cd26691021cf55fb6eacf = L.circleMarker(
+                [47.97769, 1.48812],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_c230a9d7aa9943e5539518571061371c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a3e920c5b996281ca8d554ad21f57951 = $(`<div id="html_a3e920c5b996281ca8d554ad21f57951" style="width: 100.0%; height: 100.0%;">35	'EARL de la Galinette'	47.97769	1.48812	</div>`)[0];
+                popup_c230a9d7aa9943e5539518571061371c.setContent(html_a3e920c5b996281ca8d554ad21f57951);
+            
+        
+
+        circle_marker_8204c21ac77cd26691021cf55fb6eacf.bindPopup(popup_c230a9d7aa9943e5539518571061371c)
+        ;
+
+        
+    
+    
+            var circle_marker_792f9349a3c3a1c6ecddb590b2b9f48a = L.circleMarker(
+                [48.15176, 2.23998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_12ef0d1fefbb025e8ff3de2b8b09c0f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a6d725ae3577469ae40dbcf123042514 = $(`<div id="html_a6d725ae3577469ae40dbcf123042514" style="width: 100.0%; height: 100.0%;">36	'EARL de la Varenne'	48.15176	2.23998	</div>`)[0];
+                popup_12ef0d1fefbb025e8ff3de2b8b09c0f7.setContent(html_a6d725ae3577469ae40dbcf123042514);
+            
+        
+
+        circle_marker_792f9349a3c3a1c6ecddb590b2b9f48a.bindPopup(popup_12ef0d1fefbb025e8ff3de2b8b09c0f7)
+        ;
+
+        
+    
+    
+            var circle_marker_f34a3f3f1222831335bab260d2be6227 = L.circleMarker(
+                [47.36531, 2.35924],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_85c1cad82030d4cf42e4428fcb9aba93 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_123d07e73253d96453286edbb78565b2 = $(`<div id="html_123d07e73253d96453286edbb78565b2" style="width: 100.0%; height: 100.0%;">37	'EARL des Ruesses'	47.36531	2.35924	</div>`)[0];
+                popup_85c1cad82030d4cf42e4428fcb9aba93.setContent(html_123d07e73253d96453286edbb78565b2);
+            
+        
+
+        circle_marker_f34a3f3f1222831335bab260d2be6227.bindPopup(popup_85c1cad82030d4cf42e4428fcb9aba93)
+        ;
+
+        
+    
+    
+            var circle_marker_ff836fc0292d01b62caaf468a9f1cd69 = L.circleMarker(
+                [48.22875, 1.36181],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_5135cb45d8ad73a00d816db3688d8c1e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f3f21806f896c944cd6faf5e0e7cc243 = $(`<div id="html_f3f21806f896c944cd6faf5e0e7cc243" style="width: 100.0%; height: 100.0%;">38	'EARL du Bois Galant'	48.22875	1.36181	</div>`)[0];
+                popup_5135cb45d8ad73a00d816db3688d8c1e.setContent(html_f3f21806f896c944cd6faf5e0e7cc243);
+            
+        
+
+        circle_marker_ff836fc0292d01b62caaf468a9f1cd69.bindPopup(popup_5135cb45d8ad73a00d816db3688d8c1e)
+        ;
+
+        
+    
+    
+            var circle_marker_005705bb6e739ee9b6c530acc309308d = L.circleMarker(
+                [47.16129, 2.05928],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_07e6e889d91ba341b29e49a7866db45d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_efcd5ce50c1f923abc64f11c8a74b3af = $(`<div id="html_efcd5ce50c1f923abc64f11c8a74b3af" style="width: 100.0%; height: 100.0%;">39	'EARL du Montet'	47.16129	2.05928	</div>`)[0];
+                popup_07e6e889d91ba341b29e49a7866db45d.setContent(html_efcd5ce50c1f923abc64f11c8a74b3af);
+            
+        
+
+        circle_marker_005705bb6e739ee9b6c530acc309308d.bindPopup(popup_07e6e889d91ba341b29e49a7866db45d)
+        ;
+
+        
+    
+    
+            var circle_marker_e8d507a2dca63db08843203bb8af04b4 = L.circleMarker(
+                [47.85642, 1.81091],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_a0c686e1fc054a896406a163f665605c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f28cb22fa4bf7b58ac1011cc6d48717 = $(`<div id="html_5f28cb22fa4bf7b58ac1011cc6d48717" style="width: 100.0%; height: 100.0%;">40	'EARL du Tacre'	47.85642	1.81091	</div>`)[0];
+                popup_a0c686e1fc054a896406a163f665605c.setContent(html_5f28cb22fa4bf7b58ac1011cc6d48717);
+            
+        
+
+        circle_marker_e8d507a2dca63db08843203bb8af04b4.bindPopup(popup_a0c686e1fc054a896406a163f665605c)
+        ;
+
+        
+    
+    
+            var circle_marker_99b2850502cfaad163802564afd415d2 = L.circleMarker(
+                [48.23824, 2.05737],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_0a2c5cd13c8b55e4b094534f34596bbb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5225fa69de9617708d091a3a1da9d7c3 = $(`<div id="html_5225fa69de9617708d091a3a1da9d7c3" style="width: 100.0%; height: 100.0%;">41	'EARL la Renardière'	48.23824	2.05737	</div>`)[0];
+                popup_0a2c5cd13c8b55e4b094534f34596bbb.setContent(html_5225fa69de9617708d091a3a1da9d7c3);
+            
+        
+
+        circle_marker_99b2850502cfaad163802564afd415d2.bindPopup(popup_0a2c5cd13c8b55e4b094534f34596bbb)
+        ;
+
+        
+    
+    
+            var circle_marker_bc268c6d0d4f982c0b3ebe6b91d80b44 = L.circleMarker(
+                [47.10417, 2.42392],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_f18f60e231a34486d7f772ec596273b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a261ac7c8a5bb210beab4ce015d35cb2 = $(`<div id="html_a261ac7c8a5bb210beab4ce015d35cb2" style="width: 100.0%; height: 100.0%;">42	'Entraide Berruyère'	47.10417	2.42392	</div>`)[0];
+                popup_f18f60e231a34486d7f772ec596273b1.setContent(html_a261ac7c8a5bb210beab4ce015d35cb2);
+            
+        
+
+        circle_marker_bc268c6d0d4f982c0b3ebe6b91d80b44.bindPopup(popup_f18f60e231a34486d7f772ec596273b1)
+        ;
+
+        
+    
+    
+            var circle_marker_6b8870b1fe00a8046f491a82749652d5 = L.circleMarker(
+                [48.17458, 1.55641],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_cbf96cb6c8475bf080199e02338439ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5cde3845148b1b2b45c4eac8d6d2c9f9 = $(`<div id="html_5cde3845148b1b2b45c4eac8d6d2c9f9" style="width: 100.0%; height: 100.0%;">43	'FONTAINE Jérôme'	48.17458	1.55641	</div>`)[0];
+                popup_cbf96cb6c8475bf080199e02338439ab.setContent(html_5cde3845148b1b2b45c4eac8d6d2c9f9);
+            
+        
+
+        circle_marker_6b8870b1fe00a8046f491a82749652d5.bindPopup(popup_cbf96cb6c8475bf080199e02338439ab)
+        ;
+
+        
+    
+    
+            var circle_marker_4baade27b62b3e055bb0dde272a6b0b6 = L.circleMarker(
+                [48.02858, 1.25552],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_1831991d5a9b2ae5b71a45e52f6c7b98 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f396e30ea07b6f64a7b7c5141f9c5f6b = $(`<div id="html_f396e30ea07b6f64a7b7c5141f9c5f6b" style="width: 100.0%; height: 100.0%;">44	'Ferme de Léonard'	48.02858	1.25552	</div>`)[0];
+                popup_1831991d5a9b2ae5b71a45e52f6c7b98.setContent(html_f396e30ea07b6f64a7b7c5141f9c5f6b);
+            
+        
+
+        circle_marker_4baade27b62b3e055bb0dde272a6b0b6.bindPopup(popup_1831991d5a9b2ae5b71a45e52f6c7b98)
+        ;
+
+        
+    
+    
+            var circle_marker_580ade1f2c9c184857a4c89b779ad621 = L.circleMarker(
+                [47.73033, 2.2964],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_a7ee8184dd3c093ebd8f1bffdb4b95b2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe3d1a773e639ff4372a1c79981a5cda = $(`<div id="html_fe3d1a773e639ff4372a1c79981a5cda" style="width: 100.0%; height: 100.0%;">45	'Ferme de l Aulnay'	47.73033	2.2964	</div>`)[0];
+                popup_a7ee8184dd3c093ebd8f1bffdb4b95b2.setContent(html_fe3d1a773e639ff4372a1c79981a5cda);
+            
+        
+
+        circle_marker_580ade1f2c9c184857a4c89b779ad621.bindPopup(popup_a7ee8184dd3c093ebd8f1bffdb4b95b2)
+        ;
+
+        
+    
+    
+            var circle_marker_60cc331ede79d6ff35517fa1d67c3022 = L.circleMarker(
+                [47.76771, 1.44085],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_eabc789c7482f8f80db9ce82142ca9cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f6eb2be5715ad8f0bf2539210659a343 = $(`<div id="html_f6eb2be5715ad8f0bf2539210659a343" style="width: 100.0%; height: 100.0%;">46	'Ferme de la Motte'	47.76771	1.44085	</div>`)[0];
+                popup_eabc789c7482f8f80db9ce82142ca9cb.setContent(html_f6eb2be5715ad8f0bf2539210659a343);
+            
+        
+
+        circle_marker_60cc331ede79d6ff35517fa1d67c3022.bindPopup(popup_eabc789c7482f8f80db9ce82142ca9cb)
+        ;
+
+        
+    
+    
+            var circle_marker_736d33bdaaf7f16a95212cf213c9370b = L.circleMarker(
+                [46.98735, 0.70328],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_d98ef5dde7200d43cc1159dfdb35787a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_247efc0746a2b35fb49f81d952063482 = $(`<div id="html_247efc0746a2b35fb49f81d952063482" style="width: 100.0%; height: 100.0%;">47	'Fromagerie MAURICE'	46.98735	0.70328	</div>`)[0];
+                popup_d98ef5dde7200d43cc1159dfdb35787a.setContent(html_247efc0746a2b35fb49f81d952063482);
+            
+        
+
+        circle_marker_736d33bdaaf7f16a95212cf213c9370b.bindPopup(popup_d98ef5dde7200d43cc1159dfdb35787a)
+        ;
+
+        
+    
+    
+            var circle_marker_5bcc803028d7d36de8667df8e19f845c = L.circleMarker(
+                [47.12782, 2.3668],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_e14fa32b1a26fe394fb1a8e3dd5824f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba5ec3943923c43d3c9b72d812960a3d = $(`<div id="html_ba5ec3943923c43d3c9b72d812960a3d" style="width: 100.0%; height: 100.0%;">48	'GABB 18'	47.12782	2.3668	</div>`)[0];
+                popup_e14fa32b1a26fe394fb1a8e3dd5824f5.setContent(html_ba5ec3943923c43d3c9b72d812960a3d);
+            
+        
+
+        circle_marker_5bcc803028d7d36de8667df8e19f845c.bindPopup(popup_e14fa32b1a26fe394fb1a8e3dd5824f5)
+        ;
+
+        
+    
+    
+            var circle_marker_a6a2d1a9e6f42934ca5df85791d401bf = L.circleMarker(
+                [47.54589, 1.15491],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_2f6cf987ae58232ff4a38125da7dcfd9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f61087bfe70ed913304cf8e9c6fe1df = $(`<div id="html_3f61087bfe70ed913304cf8e9c6fe1df" style="width: 100.0%; height: 100.0%;">49	'GAEC Ferme de la Cour'	47.54589	1.15491	</div>`)[0];
+                popup_2f6cf987ae58232ff4a38125da7dcfd9.setContent(html_3f61087bfe70ed913304cf8e9c6fe1df);
+            
+        
+
+        circle_marker_a6a2d1a9e6f42934ca5df85791d401bf.bindPopup(popup_2f6cf987ae58232ff4a38125da7dcfd9)
+        ;
+
+        
+    
+    
+            var circle_marker_46d7523d9fba96d9f5976a1776d49b28 = L.circleMarker(
+                [47.07474, 2.71755],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_288ba83eec1c54278fd402ac5dc51e3f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ce33384f9c72ed55b27b6fcfce070c5 = $(`<div id="html_1ce33384f9c72ed55b27b6fcfce070c5" style="width: 100.0%; height: 100.0%;">50	'GAEC Hofstede'	47.07474	2.71755	</div>`)[0];
+                popup_288ba83eec1c54278fd402ac5dc51e3f.setContent(html_1ce33384f9c72ed55b27b6fcfce070c5);
+            
+        
+
+        circle_marker_46d7523d9fba96d9f5976a1776d49b28.bindPopup(popup_288ba83eec1c54278fd402ac5dc51e3f)
+        ;
+
+        
+    
+    
+            var circle_marker_cbbdb353e32cc93974c0f9f6e6e4bc39 = L.circleMarker(
+                [47.13754, 0.99957],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_bd45fe4be70115822b06335149274bc5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f85b5c85c5794f60aa270f758c2f6efd = $(`<div id="html_f85b5c85c5794f60aa270f758c2f6efd" style="width: 100.0%; height: 100.0%;">51	'GAEC St Paul'	47.13754	0.99957	</div>`)[0];
+                popup_bd45fe4be70115822b06335149274bc5.setContent(html_f85b5c85c5794f60aa270f758c2f6efd);
+            
+        
+
+        circle_marker_cbbdb353e32cc93974c0f9f6e6e4bc39.bindPopup(popup_bd45fe4be70115822b06335149274bc5)
+        ;
+
+        
+    
+    
+            var circle_marker_1ad70d840c8f1ac7b2781b5e0e58c4dd = L.circleMarker(
+                [47.77011, 2.48081],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_ba991d1b59a5166a03800192f53c6bde = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a358fea76f3165be15e882c03d301c0e = $(`<div id="html_a358fea76f3165be15e882c03d301c0e" style="width: 100.0%; height: 100.0%;">52	'GAEC Ste Marie'	47.77011	2.48081	</div>`)[0];
+                popup_ba991d1b59a5166a03800192f53c6bde.setContent(html_a358fea76f3165be15e882c03d301c0e);
+            
+        
+
+        circle_marker_1ad70d840c8f1ac7b2781b5e0e58c4dd.bindPopup(popup_ba991d1b59a5166a03800192f53c6bde)
+        ;
+
+        
+    
+    
+            var circle_marker_794fe5186545f36d6f56b8648f81cef8 = L.circleMarker(
+                [47.51466, 0.64476],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_d48b802bd47b7f071225c522ef601904 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3e99934ef3f3948415cbe6b46054f8f3 = $(`<div id="html_3e99934ef3f3948415cbe6b46054f8f3" style="width: 100.0%; height: 100.0%;">53	'GAEC de la Georgerie'	47.51466	0.64476	</div>`)[0];
+                popup_d48b802bd47b7f071225c522ef601904.setContent(html_3e99934ef3f3948415cbe6b46054f8f3);
+            
+        
+
+        circle_marker_794fe5186545f36d6f56b8648f81cef8.bindPopup(popup_d48b802bd47b7f071225c522ef601904)
+        ;
+
+        
+    
+    
+            var circle_marker_9d47e48d9ee1bd01fd5187bb6c140114 = L.circleMarker(
+                [47.73878, 1.36987],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_21c27d086f8ab13a97afdd832ad88b8c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e0c749f0d5e0b608a1fba473e3bf974 = $(`<div id="html_8e0c749f0d5e0b608a1fba473e3bf974" style="width: 100.0%; height: 100.0%;">54	'GAEC du Chat Blanc'	47.73878	1.36987	</div>`)[0];
+                popup_21c27d086f8ab13a97afdd832ad88b8c.setContent(html_8e0c749f0d5e0b608a1fba473e3bf974);
+            
+        
+
+        circle_marker_9d47e48d9ee1bd01fd5187bb6c140114.bindPopup(popup_21c27d086f8ab13a97afdd832ad88b8c)
+        ;
+
+        
+    
+    
+            var circle_marker_6ba72b1599469c2312e40ca4096f493f = L.circleMarker(
+                [48.20219, 2.11049],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_cec0543260c349f0dbc5205828576a75 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff79e4c99bd14ad89041745576d06c6d = $(`<div id="html_ff79e4c99bd14ad89041745576d06c6d" style="width: 100.0%; height: 100.0%;">55	'GAEC du Mesnil'	48.20219	2.11049	</div>`)[0];
+                popup_cec0543260c349f0dbc5205828576a75.setContent(html_ff79e4c99bd14ad89041745576d06c6d);
+            
+        
+
+        circle_marker_6ba72b1599469c2312e40ca4096f493f.bindPopup(popup_cec0543260c349f0dbc5205828576a75)
+        ;
+
+        
+    
+    
+            var circle_marker_bc6e0d99df957307cd6c4e98f762fd68 = L.circleMarker(
+                [47.82304, 1.49904],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_134601b6a44dc1c784a3dee02c2741b9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_944f24e50ca3f3a7bb469ec05c86cc83 = $(`<div id="html_944f24e50ca3f3a7bb469ec05c86cc83" style="width: 100.0%; height: 100.0%;">56	'GAUTHIER Hugues'	47.82304	1.49904	</div>`)[0];
+                popup_134601b6a44dc1c784a3dee02c2741b9.setContent(html_944f24e50ca3f3a7bb469ec05c86cc83);
+            
+        
+
+        circle_marker_bc6e0d99df957307cd6c4e98f762fd68.bindPopup(popup_134601b6a44dc1c784a3dee02c2741b9)
+        ;
+
+        
+    
+    
+            var circle_marker_38f404df4053f84e8ca699ff93dbe29c = L.circleMarker(
+                [48.069, 2.05299],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_254cd5a4d283f77e803d269248b06c36 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d090fe164c8b15d0df6240b9e2f6221 = $(`<div id="html_2d090fe164c8b15d0df6240b9e2f6221" style="width: 100.0%; height: 100.0%;">57	'GOUEFFON Alexandre'	48.069	2.05299	</div>`)[0];
+                popup_254cd5a4d283f77e803d269248b06c36.setContent(html_2d090fe164c8b15d0df6240b9e2f6221);
+            
+        
+
+        circle_marker_38f404df4053f84e8ca699ff93dbe29c.bindPopup(popup_254cd5a4d283f77e803d269248b06c36)
+        ;
+
+        
+    
+    
+            var circle_marker_27fcb121f9a85d04bd2d32940791bc55 = L.circleMarker(
+                [47.75938, 1.50244],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_2b7207f1c1e9d531a5a7e99bedf16197 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d64f4f9e264876fe437afabc95b45582 = $(`<div id="html_d64f4f9e264876fe437afabc95b45582" style="width: 100.0%; height: 100.0%;">58	'HUGUET Emilien'	47.75938	1.50244	</div>`)[0];
+                popup_2b7207f1c1e9d531a5a7e99bedf16197.setContent(html_d64f4f9e264876fe437afabc95b45582);
+            
+        
+
+        circle_marker_27fcb121f9a85d04bd2d32940791bc55.bindPopup(popup_2b7207f1c1e9d531a5a7e99bedf16197)
+        ;
+
+        
+    
+    
+            var circle_marker_f9a2a4e427a9b7a090de0084888bcb2f = L.circleMarker(
+                [47.76245, 1.503],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_c4a1c638390fcabe9c22047438dad5d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7dc05eb92945e9c377997c3f2309e863 = $(`<div id="html_7dc05eb92945e9c377997c3f2309e863" style="width: 100.0%; height: 100.0%;">59	'HUGUET Florentin'	47.76245	1.503	</div>`)[0];
+                popup_c4a1c638390fcabe9c22047438dad5d4.setContent(html_7dc05eb92945e9c377997c3f2309e863);
+            
+        
+
+        circle_marker_f9a2a4e427a9b7a090de0084888bcb2f.bindPopup(popup_c4a1c638390fcabe9c22047438dad5d4)
+        ;
+
+        
+    
+    
+            var circle_marker_eeae9a8bf260204cac84133762a6dfb1 = L.circleMarker(
+                [47.30792, 0.41856],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_e6ec8464d7dff34e8c88949aa1a9ac12 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc356b99c21af80f644fb8f5cf26ac95 = $(`<div id="html_fc356b99c21af80f644fb8f5cf26ac95" style="width: 100.0%; height: 100.0%;">60	'Histoire de fruits'	47.30792	0.41856	</div>`)[0];
+                popup_e6ec8464d7dff34e8c88949aa1a9ac12.setContent(html_fc356b99c21af80f644fb8f5cf26ac95);
+            
+        
+
+        circle_marker_eeae9a8bf260204cac84133762a6dfb1.bindPopup(popup_e6ec8464d7dff34e8c88949aa1a9ac12)
+        ;
+
+        
+    
+    
+            var circle_marker_b6caf4dcea07786647414fa9f3968cd5 = L.circleMarker(
+                [47.48753, 2.43691],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_84670fc137acac1ff71c6913280633ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_12b3450b6557ed319b6d27a3920164ce = $(`<div id="html_12b3450b6557ed319b6d27a3920164ce" style="width: 100.0%; height: 100.0%;">61	'ISA Entraide'	47.48753	2.43691	</div>`)[0];
+                popup_84670fc137acac1ff71c6913280633ab.setContent(html_12b3450b6557ed319b6d27a3920164ce);
+            
+        
+
+        circle_marker_b6caf4dcea07786647414fa9f3968cd5.bindPopup(popup_84670fc137acac1ff71c6913280633ab)
+        ;
+
+        
+    
+    
+            var circle_marker_8e535ce88d6a3b95070fae653bfe91da = L.circleMarker(
+                [48.51248, 1.5511],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_8f4950c4861831cbdb46846d1c49564c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4bdfc115ae456bb664696ffc951e9af9 = $(`<div id="html_4bdfc115ae456bb664696ffc951e9af9" style="width: 100.0%; height: 100.0%;">62	'Jean-David LOCHON'	48.51248	1.5511	</div>`)[0];
+                popup_8f4950c4861831cbdb46846d1c49564c.setContent(html_4bdfc115ae456bb664696ffc951e9af9);
+            
+        
+
+        circle_marker_8e535ce88d6a3b95070fae653bfe91da.bindPopup(popup_8f4950c4861831cbdb46846d1c49564c)
+        ;
+
+        
+    
+    
+            var circle_marker_f1e2ff8a4ead16b43fe783cf5a1d1ead = L.circleMarker(
+                [47.56624, 1.1167],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_768611480810543c1fa8c0c74f6b1ce1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8ce8ce6bb92ce949fce29b749aebdef = $(`<div id="html_c8ce8ce6bb92ce949fce29b749aebdef" style="width: 100.0%; height: 100.0%;">63	'Julie BLESSON-MAHAIS'	47.56624	1.1167	</div>`)[0];
+                popup_768611480810543c1fa8c0c74f6b1ce1.setContent(html_c8ce8ce6bb92ce949fce29b749aebdef);
+            
+        
+
+        circle_marker_f1e2ff8a4ead16b43fe783cf5a1d1ead.bindPopup(popup_768611480810543c1fa8c0c74f6b1ce1)
+        ;
+
+        
+    
+    
+            var circle_marker_64c5a99a3b72901c6ade2c26d9471d47 = L.circleMarker(
+                [47.31736, 2.03573],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_8ce049eebf30c86584121c179b8765c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05e1e521b0b63f9eb14989a6d09ceb6c = $(`<div id="html_05e1e521b0b63f9eb14989a6d09ceb6c" style="width: 100.0%; height: 100.0%;">64	'L Abeille de Sologne'	47.31736	2.03573	</div>`)[0];
+                popup_8ce049eebf30c86584121c179b8765c9.setContent(html_05e1e521b0b63f9eb14989a6d09ceb6c);
+            
+        
+
+        circle_marker_64c5a99a3b72901c6ade2c26d9471d47.bindPopup(popup_8ce049eebf30c86584121c179b8765c9)
+        ;
+
+        
+    
+    
+            var circle_marker_7715b0431575f8834cc21ffc1de1584f = L.circleMarker(
+                [48.01546, 1.50346],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_ebf7dcc835a6830cd5be3f2ec4491c91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_93b6bafb953cae7443acf06489352b13 = $(`<div id="html_93b6bafb953cae7443acf06489352b13" style="width: 100.0%; height: 100.0%;">65	'LEGRAND Emmanuel'	48.01546	1.50346	</div>`)[0];
+                popup_ebf7dcc835a6830cd5be3f2ec4491c91.setContent(html_93b6bafb953cae7443acf06489352b13);
+            
+        
+
+        circle_marker_7715b0431575f8834cc21ffc1de1584f.bindPopup(popup_ebf7dcc835a6830cd5be3f2ec4491c91)
+        ;
+
+        
+    
+    
+            var circle_marker_18143527e095eae5886ec4dbb47bce9e = L.circleMarker(
+                [46.93254, 1.67604],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_6502d3397febb5d3a1f10073adf1d5ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d9cfe3b2b96aa769be8f5715574ee7fb = $(`<div id="html_d9cfe3b2b96aa769be8f5715574ee7fb" style="width: 100.0%; height: 100.0%;">66	'LEXTERIAT Loïc'	46.93254	1.67604	</div>`)[0];
+                popup_6502d3397febb5d3a1f10073adf1d5ee.setContent(html_d9cfe3b2b96aa769be8f5715574ee7fb);
+            
+        
+
+        circle_marker_18143527e095eae5886ec4dbb47bce9e.bindPopup(popup_6502d3397febb5d3a1f10073adf1d5ee)
+        ;
+
+        
+    
+    
+            var circle_marker_55aca6fe74146bb9f8e7135df8824c7a = L.circleMarker(
+                [47.89392, 1.52856],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_720856a1d11bbbf490d2f6cc6ed1fd2b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_970e21a3bec7e5abcdf5d0d870b374e9 = $(`<div id="html_970e21a3bec7e5abcdf5d0d870b374e9" style="width: 100.0%; height: 100.0%;">67	'La Ferme de Doublainville'	47.89392	1.52856	</div>`)[0];
+                popup_720856a1d11bbbf490d2f6cc6ed1fd2b.setContent(html_970e21a3bec7e5abcdf5d0d870b374e9);
+            
+        
+
+        circle_marker_55aca6fe74146bb9f8e7135df8824c7a.bindPopup(popup_720856a1d11bbbf490d2f6cc6ed1fd2b)
+        ;
+
+        
+    
+    
+            var circle_marker_fdd4827d36c4a9dd4f2778dc40b20211 = L.circleMarker(
+                [48.02858, 1.25552],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_91b47c1ae03033779b74d4626fc58a8b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_acfe28a929b324566ec3544a6a0d813d = $(`<div id="html_acfe28a929b324566ec3544a6a0d813d" style="width: 100.0%; height: 100.0%;">68	'La Ferme de Léonard'	48.02858	1.25552	</div>`)[0];
+                popup_91b47c1ae03033779b74d4626fc58a8b.setContent(html_acfe28a929b324566ec3544a6a0d813d);
+            
+        
+
+        circle_marker_fdd4827d36c4a9dd4f2778dc40b20211.bindPopup(popup_91b47c1ae03033779b74d4626fc58a8b)
+        ;
+
+        
+    
+    
+            var circle_marker_332a69d2f5bdf944c7c4b23d25c2f959 = L.circleMarker(
+                [47.85716, 1.83063],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_7249ec6f735a9838fb4dfc6e408a2681 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d0c6fc1a3aaecd7d809d770387eb3fa = $(`<div id="html_4d0c6fc1a3aaecd7d809d770387eb3fa" style="width: 100.0%; height: 100.0%;">69	'La Ferme des Perrières'	47.85716	1.83063	</div>`)[0];
+                popup_7249ec6f735a9838fb4dfc6e408a2681.setContent(html_4d0c6fc1a3aaecd7d809d770387eb3fa);
+            
+        
+
+        circle_marker_332a69d2f5bdf944c7c4b23d25c2f959.bindPopup(popup_7249ec6f735a9838fb4dfc6e408a2681)
+        ;
+
+        
+    
+    
+            var circle_marker_1d4e5dcc78f6664c42b0e31e2bda3dcc = L.circleMarker(
+                [46.96892, 1.421],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_c1eaf5cb6b0b49f0ac46bdef919e8c64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_23df223675c38fddb64f28cb66502ad6 = $(`<div id="html_23df223675c38fddb64f28cb66502ad6" style="width: 100.0%; height: 100.0%;">70	'La Ferme du Relais'	46.96892	1.421	</div>`)[0];
+                popup_c1eaf5cb6b0b49f0ac46bdef919e8c64.setContent(html_23df223675c38fddb64f28cb66502ad6);
+            
+        
+
+        circle_marker_1d4e5dcc78f6664c42b0e31e2bda3dcc.bindPopup(popup_c1eaf5cb6b0b49f0ac46bdef919e8c64)
+        ;
+
+        
+    
+    
+            var circle_marker_5863703f49d1aba0b85b2fe7ede2a911 = L.circleMarker(
+                [47.03873, 0.63178],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_e5551f0d3b2152cb443e1dc665f5e78f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a6e29727c0d317741ef59332ca15e31 = $(`<div id="html_6a6e29727c0d317741ef59332ca15e31" style="width: 100.0%; height: 100.0%;">71	'La Gauloise Dorée'	47.03873	0.63178	</div>`)[0];
+                popup_e5551f0d3b2152cb443e1dc665f5e78f.setContent(html_6a6e29727c0d317741ef59332ca15e31);
+            
+        
+
+        circle_marker_5863703f49d1aba0b85b2fe7ede2a911.bindPopup(popup_e5551f0d3b2152cb443e1dc665f5e78f)
+        ;
+
+        
+    
+    
+            var circle_marker_995d73ce67ce1fad876ed77c3bbbcb14 = L.circleMarker(
+                [47.25423, 0.73076],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_d910ca3ab5db8312259ce86fb4bbc244 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3c6e9a3889fe031c72b7e771ac6bb0a6 = $(`<div id="html_3c6e9a3889fe031c72b7e771ac6bb0a6" style="width: 100.0%; height: 100.0%;">72	'La branche à fruits'	47.25423	0.73076	</div>`)[0];
+                popup_d910ca3ab5db8312259ce86fb4bbc244.setContent(html_3c6e9a3889fe031c72b7e771ac6bb0a6);
+            
+        
+
+        circle_marker_995d73ce67ce1fad876ed77c3bbbcb14.bindPopup(popup_d910ca3ab5db8312259ce86fb4bbc244)
+        ;
+
+        
+    
+    
+            var circle_marker_95560327684f7a22f36d00ed7f20bdb9 = L.circleMarker(
+                [47.06959, 1.05077],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_99db38ab47265fe53075e10401211e62 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_45973ddcfa6ebe74485ea1d5c2651e3e = $(`<div id="html_45973ddcfa6ebe74485ea1d5c2651e3e" style="width: 100.0%; height: 100.0%;">73	'Laiterie de Verneuil'	47.06959	1.05077	</div>`)[0];
+                popup_99db38ab47265fe53075e10401211e62.setContent(html_45973ddcfa6ebe74485ea1d5c2651e3e);
+            
+        
+
+        circle_marker_95560327684f7a22f36d00ed7f20bdb9.bindPopup(popup_99db38ab47265fe53075e10401211e62)
+        ;
+
+        
+    
+    
+            var circle_marker_f0af0d05c865e4f0f01b5f8443489810 = L.circleMarker(
+                [47.08125, 1.03506],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_86b498caddd4e498e281e2fa9b9be758 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_29537ba8d6d3b981c00122e361c46289 = $(`<div id="html_29537ba8d6d3b981c00122e361c46289" style="width: 100.0%; height: 100.0%;">74	'Le Grain Libre'	47.08125	1.03506	</div>`)[0];
+                popup_86b498caddd4e498e281e2fa9b9be758.setContent(html_29537ba8d6d3b981c00122e361c46289);
+            
+        
+
+        circle_marker_f0af0d05c865e4f0f01b5f8443489810.bindPopup(popup_86b498caddd4e498e281e2fa9b9be758)
+        ;
+
+        
+    
+    
+            var circle_marker_bea3a6ac175888a85f4609d9532e8e10 = L.circleMarker(
+                [47.20702, 2.38179],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_697cce5312cc53dd423e7f1c05630cbf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_feaad88823a1083b3fda62efa5efab32 = $(`<div id="html_feaad88823a1083b3fda62efa5efab32" style="width: 100.0%; height: 100.0%;">75	'Le goût des saisons'	47.20702	2.38179	</div>`)[0];
+                popup_697cce5312cc53dd423e7f1c05630cbf.setContent(html_feaad88823a1083b3fda62efa5efab32);
+            
+        
+
+        circle_marker_bea3a6ac175888a85f4609d9532e8e10.bindPopup(popup_697cce5312cc53dd423e7f1c05630cbf)
+        ;
+
+        
+    
+    
+            var circle_marker_7de1e931e126cacd707a4e4d2061528e = L.circleMarker(
+                [46.9627, 1.18103],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_ec28d00d397015bdfe604c1a94ffb55d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9075b336e7b90b797aa1531e5bb9227b = $(`<div id="html_9075b336e7b90b797aa1531e5bb9227b" style="width: 100.0%; height: 100.0%;">76	'Le jardin du Breuil'	46.9627	1.18103	</div>`)[0];
+                popup_ec28d00d397015bdfe604c1a94ffb55d.setContent(html_9075b336e7b90b797aa1531e5bb9227b);
+            
+        
+
+        circle_marker_7de1e931e126cacd707a4e4d2061528e.bindPopup(popup_ec28d00d397015bdfe604c1a94ffb55d)
+        ;
+
+        
+    
+    
+            var circle_marker_e27c710198002bc4e541f91983a37a82 = L.circleMarker(
+                [47.54256, 1.45546],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_593812d80d45f1842a639d555636b5c3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8b30c1dc425bb1ddce8416e721bb9336 = $(`<div id="html_8b30c1dc425bb1ddce8416e721bb9336" style="width: 100.0%; height: 100.0%;">77	'Les Vergers du Closeau'	47.54256	1.45546	</div>`)[0];
+                popup_593812d80d45f1842a639d555636b5c3.setContent(html_8b30c1dc425bb1ddce8416e721bb9336);
+            
+        
+
+        circle_marker_e27c710198002bc4e541f91983a37a82.bindPopup(popup_593812d80d45f1842a639d555636b5c3)
+        ;
+
+        
+    
+    
+            var circle_marker_6a340c662a436e62165882158ec5293e = L.circleMarker(
+                [47.56688, 1.32029],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_e064e0b546e35fb9e2f21ff6493a1459 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a5f9c081cbb387d89b4f99d45bf225bc = $(`<div id="html_a5f9c081cbb387d89b4f99d45bf225bc" style="width: 100.0%; height: 100.0%;">78	'Les jardins de Cocagnes'	47.56688	1.32029	</div>`)[0];
+                popup_e064e0b546e35fb9e2f21ff6493a1459.setContent(html_a5f9c081cbb387d89b4f99d45bf225bc);
+            
+        
+
+        circle_marker_6a340c662a436e62165882158ec5293e.bindPopup(popup_e064e0b546e35fb9e2f21ff6493a1459)
+        ;
+
+        
+    
+    
+            var circle_marker_3814f875d948cc6a5af93ff3aede3fe9 = L.circleMarker(
+                [47.49279, 0.92309],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_aed514e2b6704ca21f57d22a5f9a67e6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f59293e342c973f8df2a833645a24086 = $(`<div id="html_f59293e342c973f8df2a833645a24086" style="width: 100.0%; height: 100.0%;">79	'Les jardins de contrat'	47.49279	0.92309	</div>`)[0];
+                popup_aed514e2b6704ca21f57d22a5f9a67e6.setContent(html_f59293e342c973f8df2a833645a24086);
+            
+        
+
+        circle_marker_3814f875d948cc6a5af93ff3aede3fe9.bindPopup(popup_aed514e2b6704ca21f57d22a5f9a67e6)
+        ;
+
+        
+    
+    
+            var circle_marker_061c3b9673b4ec1f5bb9325d866ceca9 = L.circleMarker(
+                [47.85621, 2.07235],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_52c078728d624cbb58a6d1ef298660d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f34d3192dff779e3b487a205a9456d15 = $(`<div id="html_f34d3192dff779e3b487a205a9456d15" style="width: 100.0%; height: 100.0%;">80	'Louis CAILLEAU'	47.85621	2.07235	</div>`)[0];
+                popup_52c078728d624cbb58a6d1ef298660d4.setContent(html_f34d3192dff779e3b487a205a9456d15);
+            
+        
+
+        circle_marker_061c3b9673b4ec1f5bb9325d866ceca9.bindPopup(popup_52c078728d624cbb58a6d1ef298660d4)
+        ;
+
+        
+    
+    
+            var circle_marker_0b1ef57eb708304adabf5c71c95d9c27 = L.circleMarker(
+                [46.88536, 1.57245],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_5a5dfe68030a368e38120b9149e0a4c2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c0bd3491d4e37dfe6602cce65250e721 = $(`<div id="html_c0bd3491d4e37dfe6602cce65250e721" style="width: 100.0%; height: 100.0%;">81	'Loïc COSSET'	46.88536	1.57245	</div>`)[0];
+                popup_5a5dfe68030a368e38120b9149e0a4c2.setContent(html_c0bd3491d4e37dfe6602cce65250e721);
+            
+        
+
+        circle_marker_0b1ef57eb708304adabf5c71c95d9c27.bindPopup(popup_5a5dfe68030a368e38120b9149e0a4c2)
+        ;
+
+        
+    
+    
+            var circle_marker_2ed5be95eb60809c534e7c65b1111b4f = L.circleMarker(
+                [47.93029, 1.95672],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_10b9782cd7b923c26667f6047985b7b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a50472141ef30ee3d8ef42165d5c0ff = $(`<div id="html_2a50472141ef30ee3d8ef42165d5c0ff" style="width: 100.0%; height: 100.0%;">82	'MINEC-DUBE Jérôme'	47.93029	1.95672	</div>`)[0];
+                popup_10b9782cd7b923c26667f6047985b7b4.setContent(html_2a50472141ef30ee3d8ef42165d5c0ff);
+            
+        
+
+        circle_marker_2ed5be95eb60809c534e7c65b1111b4f.bindPopup(popup_10b9782cd7b923c26667f6047985b7b4)
+        ;
+
+        
+    
+    
+            var circle_marker_1a919ae27829f956a4a38e7255a8c942 = L.circleMarker(
+                [47.65143, 1.42323],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_91ee6d9a05e0669912068c5b10f98de7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8b5a59a3d5e2e57cc689665c6e34a0f8 = $(`<div id="html_8b5a59a3d5e2e57cc689665c6e34a0f8" style="width: 100.0%; height: 100.0%;">83	'MORINEAU Xavier'	47.65143	1.42323	</div>`)[0];
+                popup_91ee6d9a05e0669912068c5b10f98de7.setContent(html_8b5a59a3d5e2e57cc689665c6e34a0f8);
+            
+        
+
+        circle_marker_1a919ae27829f956a4a38e7255a8c942.bindPopup(popup_91ee6d9a05e0669912068c5b10f98de7)
+        ;
+
+        
+    
+    
+            var circle_marker_cad8348a915101f5f93141a69e0b2a52 = L.circleMarker(
+                [48.13642, 1.67489],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_876f650f408de1d877f601eed3059a96 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_47e33c6d3296e567f803dacbfe05c855 = $(`<div id="html_47e33c6d3296e567f803dacbfe05c855" style="width: 100.0%; height: 100.0%;">84	'Négo Beauce'	48.13642	1.67489	</div>`)[0];
+                popup_876f650f408de1d877f601eed3059a96.setContent(html_47e33c6d3296e567f803dacbfe05c855);
+            
+        
+
+        circle_marker_cad8348a915101f5f93141a69e0b2a52.bindPopup(popup_876f650f408de1d877f601eed3059a96)
+        ;
+
+        
+    
+    
+            var circle_marker_b193344c18311881fafb13d504c32f60 = L.circleMarker(
+                [48.04598, 1.59163],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_f8495b6fd58637408783a19668cbac84 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9df46d121f30b4cc0b37ded2845c3722 = $(`<div id="html_9df46d121f30b4cc0b37ded2845c3722" style="width: 100.0%; height: 100.0%;">85	'POTHIER Sylvain'	48.04598	1.59163	</div>`)[0];
+                popup_f8495b6fd58637408783a19668cbac84.setContent(html_9df46d121f30b4cc0b37ded2845c3722);
+            
+        
+
+        circle_marker_b193344c18311881fafb13d504c32f60.bindPopup(popup_f8495b6fd58637408783a19668cbac84)
+        ;
+
+        
+    
+    
+            var circle_marker_77125dc9434954994fcef4c43714a365 = L.circleMarker(
+                [47.84412, 1.00846],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_605917f1d8ad5a72201de267617a2cc5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_01c65c4fa26a81243ba5bda6c20cf0ab = $(`<div id="html_01c65c4fa26a81243ba5bda6c20cf0ab" style="width: 100.0%; height: 100.0%;">86	'Porcs Bio du Centre'	47.84412	1.00846	</div>`)[0];
+                popup_605917f1d8ad5a72201de267617a2cc5.setContent(html_01c65c4fa26a81243ba5bda6c20cf0ab);
+            
+        
+
+        circle_marker_77125dc9434954994fcef4c43714a365.bindPopup(popup_605917f1d8ad5a72201de267617a2cc5)
+        ;
+
+        
+    
+    
+            var circle_marker_fd0116abdb45c1a8b12b7c1177c2f07d = L.circleMarker(
+                [47.15938, -1.55337],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_f5b9482d8315cedbc8ce05fe638f1771 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cdaac855c1f61acef9373d22c2497941 = $(`<div id="html_cdaac855c1f61acef9373d22c2497941" style="width: 100.0%; height: 100.0%;">87	'Provinces Bio - Relais Vert'	47.15938	-1.55337	</div>`)[0];
+                popup_f5b9482d8315cedbc8ce05fe638f1771.setContent(html_cdaac855c1f61acef9373d22c2497941);
+            
+        
+
+        circle_marker_fd0116abdb45c1a8b12b7c1177c2f07d.bindPopup(popup_f5b9482d8315cedbc8ce05fe638f1771)
+        ;
+
+        
+    
+    
+            var circle_marker_5150f27d17658e21591dac6ca5b8ddea = L.circleMarker(
+                [47.69941, 1.29609],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_18e9220450a3a7a5cca7a94fadd4e1d7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c295e3214ec7db204d385b4c372b09ee = $(`<div id="html_c295e3214ec7db204d385b4c372b09ee" style="width: 100.0%; height: 100.0%;">88	'SAMYN Frédéric'	47.69941	1.29609	</div>`)[0];
+                popup_18e9220450a3a7a5cca7a94fadd4e1d7.setContent(html_c295e3214ec7db204d385b4c372b09ee);
+            
+        
+
+        circle_marker_5150f27d17658e21591dac6ca5b8ddea.bindPopup(popup_18e9220450a3a7a5cca7a94fadd4e1d7)
+        ;
+
+        
+    
+    
+            var circle_marker_c15c8e03eadfe7addae7c2b577e6c449 = L.circleMarker(
+                [48.10241, 1.58875],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_4fdddb6ea10b58fd706a4415025aaa6c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58b35fdfa0266aac99b4c44d8fda4dfb = $(`<div id="html_58b35fdfa0266aac99b4c44d8fda4dfb" style="width: 100.0%; height: 100.0%;">89	'SARL FFBIO'	48.10241	1.58875	</div>`)[0];
+                popup_4fdddb6ea10b58fd706a4415025aaa6c.setContent(html_58b35fdfa0266aac99b4c44d8fda4dfb);
+            
+        
+
+        circle_marker_c15c8e03eadfe7addae7c2b577e6c449.bindPopup(popup_4fdddb6ea10b58fd706a4415025aaa6c)
+        ;
+
+        
+    
+    
+            var circle_marker_e952cf058fd2d7d439969a075eda4c5c = L.circleMarker(
+                [47.44415, 1.44302],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_51bd6955ce96ef7da2710b130f72b380 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd21bc715d4e0a79195c0a3516a54973 = $(`<div id="html_cd21bc715d4e0a79195c0a3516a54973" style="width: 100.0%; height: 100.0%;">90	'SARL La Porte Dorée'	47.44415	1.44302	</div>`)[0];
+                popup_51bd6955ce96ef7da2710b130f72b380.setContent(html_cd21bc715d4e0a79195c0a3516a54973);
+            
+        
+
+        circle_marker_e952cf058fd2d7d439969a075eda4c5c.bindPopup(popup_51bd6955ce96ef7da2710b130f72b380)
+        ;
+
+        
+    
+    
+            var circle_marker_34c0873f1c578bf5101a16ca1b53bd88 = L.circleMarker(
+                [47.81666, 2.16286],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_194e58a1529074da786aa224c88d8847 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a667aab218589679085f8479173acbed = $(`<div id="html_a667aab218589679085f8479173acbed" style="width: 100.0%; height: 100.0%;">91	'SARL Saute Mouton'	47.81666	2.16286	</div>`)[0];
+                popup_194e58a1529074da786aa224c88d8847.setContent(html_a667aab218589679085f8479173acbed);
+            
+        
+
+        circle_marker_34c0873f1c578bf5101a16ca1b53bd88.bindPopup(popup_194e58a1529074da786aa224c88d8847)
+        ;
+
+        
+    
+    
+            var circle_marker_c4538922f679d590437402b129dd847f = L.circleMarker(
+                [47.32949, 2.82986],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_851e65b918d7125c5971f625f65e17e6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_02599eb5a0513da22627384914adf82d = $(`<div id="html_02599eb5a0513da22627384914adf82d" style="width: 100.0%; height: 100.0%;">92	'SAS Brasserie Sancerroise'	47.32949	2.82986	</div>`)[0];
+                popup_851e65b918d7125c5971f625f65e17e6.setContent(html_02599eb5a0513da22627384914adf82d);
+            
+        
+
+        circle_marker_c4538922f679d590437402b129dd847f.bindPopup(popup_851e65b918d7125c5971f625f65e17e6)
+        ;
+
+        
+    
+    
+            var circle_marker_cfb7762304aa841526a6218a68470129 = L.circleMarker(
+                [46.97963, 2.19955],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_af54d7bc0c91d37dc8bfad70f348d69f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bbd4ba34713e802e4bf7014cc37bc255 = $(`<div id="html_bbd4ba34713e802e4bf7014cc37bc255" style="width: 100.0%; height: 100.0%;">93	'SAS Domaine du Coudray'	46.97963	2.19955	</div>`)[0];
+                popup_af54d7bc0c91d37dc8bfad70f348d69f.setContent(html_bbd4ba34713e802e4bf7014cc37bc255);
+            
+        
+
+        circle_marker_cfb7762304aa841526a6218a68470129.bindPopup(popup_af54d7bc0c91d37dc8bfad70f348d69f)
+        ;
+
+        
+    
+    
+            var circle_marker_e8292bcaf92a3dfd726c7ef775555e66 = L.circleMarker(
+                [47.45049, 0.65888],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_0eada95551fc09abc5bb0c39adf1d64e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d142ad9311c776f50e6afb1af2af79b5 = $(`<div id="html_d142ad9311c776f50e6afb1af2af79b5" style="width: 100.0%; height: 100.0%;">94	'SASU Ju Nature'	47.45049	0.65888	</div>`)[0];
+                popup_0eada95551fc09abc5bb0c39adf1d64e.setContent(html_d142ad9311c776f50e6afb1af2af79b5);
+            
+        
+
+        circle_marker_e8292bcaf92a3dfd726c7ef775555e66.bindPopup(popup_0eada95551fc09abc5bb0c39adf1d64e)
+        ;
+
+        
+    
+    
+            var circle_marker_7c1f14ed84b4d23f7f51ee180d66db33 = L.circleMarker(
+                [47.60482, 1.42151],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_36d3b8950c1c264b0ba955a9423ca9b2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6d239242a3f02fbfcb0ed2dfab1c7ed5 = $(`<div id="html_6d239242a3f02fbfcb0ed2dfab1c7ed5" style="width: 100.0%; height: 100.0%;">95	'SCEA Ferme des Montmartins'	47.60482	1.42151	</div>`)[0];
+                popup_36d3b8950c1c264b0ba955a9423ca9b2.setContent(html_6d239242a3f02fbfcb0ed2dfab1c7ed5);
+            
+        
+
+        circle_marker_7c1f14ed84b4d23f7f51ee180d66db33.bindPopup(popup_36d3b8950c1c264b0ba955a9423ca9b2)
+        ;
+
+        
+    
+    
+            var circle_marker_a4457e23d33fc5d02f4fbef78b636497 = L.circleMarker(
+                [46.91396, 1.25348],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_211eee22ee53235acd5aa566d3744c36 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a5afbcd565b1f64ca36610f4bd0491af = $(`<div id="html_a5afbcd565b1f64ca36610f4bd0491af" style="width: 100.0%; height: 100.0%;">96	'SCEA L Orée de la Brenne'	46.91396	1.25348	</div>`)[0];
+                popup_211eee22ee53235acd5aa566d3744c36.setContent(html_a5afbcd565b1f64ca36610f4bd0491af);
+            
+        
+
+        circle_marker_a4457e23d33fc5d02f4fbef78b636497.bindPopup(popup_211eee22ee53235acd5aa566d3744c36)
+        ;
+
+        
+    
+    
+            var circle_marker_99f544aa53a506f44793d3d00de454b9 = L.circleMarker(
+                [47.8228, 1.30242],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_dbb32d8110b593a16933d3de75cba2dd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7662b5f6e4d7664f0e697e8cf8b2499b = $(`<div id="html_7662b5f6e4d7664f0e697e8cf8b2499b" style="width: 100.0%; height: 100.0%;">97	'SCEA La Croix des Vignes'	47.8228	1.30242	</div>`)[0];
+                popup_dbb32d8110b593a16933d3de75cba2dd.setContent(html_7662b5f6e4d7664f0e697e8cf8b2499b);
+            
+        
+
+        circle_marker_99f544aa53a506f44793d3d00de454b9.bindPopup(popup_dbb32d8110b593a16933d3de75cba2dd)
+        ;
+
+        
+    
+    
+            var circle_marker_8251bcd3b9a1aa927bc8cd7f4701619a = L.circleMarker(
+                [47.01582, 0.38425],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_9590e6100474e2b5fca373cdf8fd6f28 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f326beae9a2d8d18866d181bdee69bc8 = $(`<div id="html_f326beae9a2d8d18866d181bdee69bc8" style="width: 100.0%; height: 100.0%;">98	'SCEA La Tibiodaire'	47.01582	0.38425	</div>`)[0];
+                popup_9590e6100474e2b5fca373cdf8fd6f28.setContent(html_f326beae9a2d8d18866d181bdee69bc8);
+            
+        
+
+        circle_marker_8251bcd3b9a1aa927bc8cd7f4701619a.bindPopup(popup_9590e6100474e2b5fca373cdf8fd6f28)
+        ;
+
+        
+    
+    
+            var circle_marker_95c3520d64d3213ccdc8776d77f40f03 = L.circleMarker(
+                [47.78367, 2.14434],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_fef91f86330e06729d5bb9752cf71d2d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_53cbb66894370e810465542520317da7 = $(`<div id="html_53cbb66894370e810465542520317da7" style="width: 100.0%; height: 100.0%;">99	'SCEA Le Petit Bergeresse'	47.78367	2.14434	</div>`)[0];
+                popup_fef91f86330e06729d5bb9752cf71d2d.setContent(html_53cbb66894370e810465542520317da7);
+            
+        
+
+        circle_marker_95c3520d64d3213ccdc8776d77f40f03.bindPopup(popup_fef91f86330e06729d5bb9752cf71d2d)
+        ;
+
+        
+    
+    
+            var circle_marker_135773ca56e69bc4538c56bc08f625a7 = L.circleMarker(
+                [47.57238, 1.33778],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_199e38ea9d8a6f0407cfd64df9a2554d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b1b1eea5c82b834d12df372ffca5455b = $(`<div id="html_b1b1eea5c82b834d12df372ffca5455b" style="width: 100.0%; height: 100.0%;">100	'SCEA Les Fourmis Vertes'	47.57238	1.33778	</div>`)[0];
+                popup_199e38ea9d8a6f0407cfd64df9a2554d.setContent(html_b1b1eea5c82b834d12df372ffca5455b);
+            
+        
+
+        circle_marker_135773ca56e69bc4538c56bc08f625a7.bindPopup(popup_199e38ea9d8a6f0407cfd64df9a2554d)
+        ;
+
+        
+    
+    
+            var circle_marker_b7b353a047ab7df7ffb7cc03c55d33ed = L.circleMarker(
+                [47.80865, 1.38591],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_8f5bdb34fa6bb00fa29eae68f18cd4b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_42dd4d5a9a6a42db78806e20c919679c = $(`<div id="html_42dd4d5a9a6a42db78806e20c919679c" style="width: 100.0%; height: 100.0%;">101	'SCEA Les Vergers'	47.80865	1.38591	</div>`)[0];
+                popup_8f5bdb34fa6bb00fa29eae68f18cd4b0.setContent(html_42dd4d5a9a6a42db78806e20c919679c);
+            
+        
+
+        circle_marker_b7b353a047ab7df7ffb7cc03c55d33ed.bindPopup(popup_8f5bdb34fa6bb00fa29eae68f18cd4b0)
+        ;
+
+        
+    
+    
+            var circle_marker_b18b093153f6b0b5848342b335a6e9d6 = L.circleMarker(
+                [47.75628, 1.50071],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_dbaea77859285f9cf08cbff474290a94 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c4cbf318983b8a9b739cbd52958b2e62 = $(`<div id="html_c4cbf318983b8a9b739cbd52958b2e62" style="width: 100.0%; height: 100.0%;">102	'SCEA Obi'	47.75628	1.50071	</div>`)[0];
+                popup_dbaea77859285f9cf08cbff474290a94.setContent(html_c4cbf318983b8a9b739cbd52958b2e62);
+            
+        
+
+        circle_marker_b18b093153f6b0b5848342b335a6e9d6.bindPopup(popup_dbaea77859285f9cf08cbff474290a94)
+        ;
+
+        
+    
+    
+            var circle_marker_aacac1ea72e5a34edbdf16efeb5b7969 = L.circleMarker(
+                [46.9498, 2.43192],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_cbe3e0439e862490997e222c630fe7ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ed1d3ccc9ab810833d25e4a10e73164 = $(`<div id="html_0ed1d3ccc9ab810833d25e4a10e73164" style="width: 100.0%; height: 100.0%;">103	'SCEA de Villardeau'	46.9498	2.43192	</div>`)[0];
+                popup_cbe3e0439e862490997e222c630fe7ee.setContent(html_0ed1d3ccc9ab810833d25e4a10e73164);
+            
+        
+
+        circle_marker_aacac1ea72e5a34edbdf16efeb5b7969.bindPopup(popup_cbe3e0439e862490997e222c630fe7ee)
+        ;
+
+        
+    
+    
+            var circle_marker_135507fbedc8d6abf48a433760caa4a3 = L.circleMarker(
+                [47.76245, 1.503],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_b3c19beddc433df25fd97f1a82579b45 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_69e547391e45e3962f2f1407add9fc60 = $(`<div id="html_69e547391e45e3962f2f1407add9fc60" style="width: 100.0%; height: 100.0%;">104	'SCEA de la Croix de Guignas'	47.76245	1.503	</div>`)[0];
+                popup_b3c19beddc433df25fd97f1a82579b45.setContent(html_69e547391e45e3962f2f1407add9fc60);
+            
+        
+
+        circle_marker_135507fbedc8d6abf48a433760caa4a3.bindPopup(popup_b3c19beddc433df25fd97f1a82579b45)
+        ;
+
+        
+    
+    
+            var circle_marker_791d13923f8ff5f28222254bb4c02308 = L.circleMarker(
+                [47.8228, 1.30242],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_a6112a9cfe4525395af697a3ddb4c537 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f2be088144a0988758410922fcb9572 = $(`<div id="html_8f2be088144a0988758410922fcb9572" style="width: 100.0%; height: 100.0%;">105	'SCEA la Croix des Vignes'	47.8228	1.30242	</div>`)[0];
+                popup_a6112a9cfe4525395af697a3ddb4c537.setContent(html_8f2be088144a0988758410922fcb9572);
+            
+        
+
+        circle_marker_791d13923f8ff5f28222254bb4c02308.bindPopup(popup_a6112a9cfe4525395af697a3ddb4c537)
+        ;
+
+        
+    
+    
+            var circle_marker_4fcfd0f1c70ccfb4df796d32e3fb254b = L.circleMarker(
+                [47.85284, 1.9579],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_86a148465a4636084f9391332fb2e3e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_01937bd58cb77402145d0d3f8e4d37eb = $(`<div id="html_01937bd58cb77402145d0d3f8e4d37eb" style="width: 100.0%; height: 100.0%;">106	'Saint Cyr Bio Val'	47.85284	1.9579	</div>`)[0];
+                popup_86a148465a4636084f9391332fb2e3e3.setContent(html_01937bd58cb77402145d0d3f8e4d37eb);
+            
+        
+
+        circle_marker_4fcfd0f1c70ccfb4df796d32e3fb254b.bindPopup(popup_86a148465a4636084f9391332fb2e3e3)
+        ;
+
+        
+    
+    
+            var circle_marker_0e8f019fd3caa3b6e96896d4163e7fe4 = L.circleMarker(
+                [47.46367, -0.66414],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_82bd2d4ea04e5d874ff0ee7a50287e88 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_74ec5c265d981614e9a163a7fa075257 = $(`<div id="html_74ec5c265d981614e9a163a7fa075257" style="width: 100.0%; height: 100.0%;">107	'Ternao'	47.46367	-0.66414	</div>`)[0];
+                popup_82bd2d4ea04e5d874ff0ee7a50287e88.setContent(html_74ec5c265d981614e9a163a7fa075257);
+            
+        
+
+        circle_marker_0e8f019fd3caa3b6e96896d4163e7fe4.bindPopup(popup_82bd2d4ea04e5d874ff0ee7a50287e88)
+        ;
+
+        
+    
+    
+            var circle_marker_2202cb9e305516e96fe020953078a3e8 = L.circleMarker(
+                [47.43248, 1.44636],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_ff2bf6e93d35bddc107a5213008a2fcd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4219b1fb3c0d7ed271d8750eb4a305b9 = $(`<div id="html_4219b1fb3c0d7ed271d8750eb4a305b9" style="width: 100.0%; height: 100.0%;">108	'Terra Cérès'	47.43248	1.44636	</div>`)[0];
+                popup_ff2bf6e93d35bddc107a5213008a2fcd.setContent(html_4219b1fb3c0d7ed271d8750eb4a305b9);
+            
+        
+
+        circle_marker_2202cb9e305516e96fe020953078a3e8.bindPopup(popup_ff2bf6e93d35bddc107a5213008a2fcd)
+        ;
+
+        
+    
+    
+            var circle_marker_e6dc76453eda603398f1efbaba9bcde4 = L.circleMarker(
+                [47.81274, 1.16543],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_5b116649424e7a1571e93187b1b808db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54952a416f507156b044095cc26a096b = $(`<div id="html_54952a416f507156b044095cc26a096b" style="width: 100.0%; height: 100.0%;">109	'Terres Dormes'	47.81274	1.16543	</div>`)[0];
+                popup_5b116649424e7a1571e93187b1b808db.setContent(html_54952a416f507156b044095cc26a096b);
+            
+        
+
+        circle_marker_e6dc76453eda603398f1efbaba9bcde4.bindPopup(popup_5b116649424e7a1571e93187b1b808db)
+        ;
+
+        
+    
+    
+            var circle_marker_cad9f5870da089a659c9e751d9c0ba93 = L.circleMarker(
+                [48.74069, 1.48035],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_1cb6d7ba9146a7fd098d9d493b69a11c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_431c1052367b6f8cbf2a86bc9acb0b0c = $(`<div id="html_431c1052367b6f8cbf2a86bc9acb0b0c" style="width: 100.0%; height: 100.0%;">110	'Terres d Excellences'	48.74069	1.48035	</div>`)[0];
+                popup_1cb6d7ba9146a7fd098d9d493b69a11c.setContent(html_431c1052367b6f8cbf2a86bc9acb0b0c);
+            
+        
+
+        circle_marker_cad9f5870da089a659c9e751d9c0ba93.bindPopup(popup_1cb6d7ba9146a7fd098d9d493b69a11c)
+        ;
+
+        
+    
+    
+            var circle_marker_15ec80190e095321b7fa7b69c93219af = L.circleMarker(
+                [47.5977, 2.67714],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_e0c549045fc5ba0fac85a51787b237c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_09958c3d266a4759aec4cbda818f41ab = $(`<div id="html_09958c3d266a4759aec4cbda818f41ab" style="width: 100.0%; height: 100.0%;">111	'Thomas GANEM'	47.5977	2.67714	</div>`)[0];
+                popup_e0c549045fc5ba0fac85a51787b237c7.setContent(html_09958c3d266a4759aec4cbda818f41ab);
+            
+        
+
+        circle_marker_15ec80190e095321b7fa7b69c93219af.bindPopup(popup_e0c549045fc5ba0fac85a51787b237c7)
+        ;
+
+        
+    
+    
+            var circle_marker_6c8bca5a2c8799378343d06f8500e1d9 = L.circleMarker(
+                [47.58404, 1.34278],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4ad6497c8b461f2bb86757069edc7d11);
+        
+    
+        var popup_b80498b13c25920ad8b694fbaedb2cba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_90732f62beaa4d23c41f2f3716ea75a5 = $(`<div id="html_90732f62beaa4d23c41f2f3716ea75a5" style="width: 100.0%; height: 100.0%;">112	'Val Bio Centre'	47.58404	1.34278	</div>`)[0];
+                popup_b80498b13c25920ad8b694fbaedb2cba.setContent(html_90732f62beaa4d23c41f2f3716ea75a5);
+            
+        
+
+        circle_marker_6c8bca5a2c8799378343d06f8500e1d9.bindPopup(popup_b80498b13c25920ad8b694fbaedb2cba)
+        ;
+
+        
+    
+</script>
+</html>
