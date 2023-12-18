@@ -11,3 +11,12 @@ function minutesToDayHourMinutes(timeInMinutes::Int64)::Vector{Int64}
     return [days, hours, minutes]
 
 end
+
+days::Dict{Int64,String} = Dict{Int64,String}(0 => "lundi", 1 => "mardi", 2 => "mercredi", 3 => "jeudi", 4 => "vendredi", 5 => "samedi", 6 => "dimanche")
+
+function matinaprem(i)::String
+    if (i%2 == 0) "matin" else "après-midi"
+    end
+end
+
+daysStrings = [days[i÷2] * " " * matinaprem(i) for i in 0:9]

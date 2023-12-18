@@ -6,7 +6,3 @@ struct Client
     timeWindows::Vector{Vector{Int64}}
 end
 
-function clientsFromCSV(input::String)::Vector{Client}
-
-end
-

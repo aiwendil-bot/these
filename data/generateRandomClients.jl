@@ -1,10 +1,11 @@
-using PyCall, Random, DataFrames, CSV, StatsBase, Geodesy, DelimitedFiles
+using PyCall, Random, DataFrames, CSV, StatsBase, Geodesy, DelimitedFiles, Distributions
 include("..\\firstModel\\Client.jl")
 include("..\\firstModel\\Producer.jl")
+include("..\\firstModel\\Producer_demijournees.jl")
 
-function generateRandomClients(    
+function generateRandomClients(   
     producer::Producer,
-    radiusInMeters::Int64,
+    radiusRange::Vector{Int64},
     nbOfGenerated::Int64,
     sizeOfWindows::Int64, 
     maxOfWindows::Int64, 
@@ -12,9 +13,9 @@ function generateRandomClients(
 
     producerCoordinatesFloat = [producer.coordinates.lat, producer.coordinates.lon]
 
-    coordinates::Vector{LatLon{Float64}} = generatePointsWithinRadius(producerCoordinatesFloat, radiusInMeters, nbOfGenerated)
+    coordinates::Vector{LatLon{Float64}} = generatePointsWithinRadius(producerCoordinatesFloat, radiusRange, nbOfGenerated)
     demands::Vector{Vector{Float64}} = generateDemands(producer.numberOfProducts, nbOfGenerated, producer.capacity)
-    timeWindows::Vector{Vector{Vector{Int64}}} = generateTimeWindows(nbOfGenerated, sizeOfWindows, maxOfWindows, nbOfDays)
+    timeWindows::Vector{Vector{Vector{Int64}}} = generateTimeWindows(nbOfGenerated, sizeOfWindows, maxOfWindows, nbOfDays) 
 
     open("data\\$(producer.name)_$(nbOfGenerated)_clients.txt", "w") do f
         write(f, "$(producer.name), $(producer.numberOfProducts), $sizeOfWindows, $maxOfWindows, $nbOfDays \n")
@@ -27,7 +28,25 @@ function generateRandomClients(
     
 end
 
-function generatePointsWithinRadius(center::Vector{Float64}, radiusInMeters::Int64, nbOfGenerated::Int64)::Vector{LatLon{Float64}}
+function generateRandomClients_demijournees(  
+    producer::Producer_demijournees,
+    radiusRange::Vector{Int64},
+    nbOfGenerated::Int64,
+    maxOfWindows::Int64, 
+    nbOfDays::Int64)::Vector{Client_demijournee}
+
+    producerCoordinatesFloat = [producer.coordinates.lat, producer.coordinates.lon]
+
+    coordinates::Vector{LatLon{Float64}} = generatePointsWithinRadius(producerCoordinatesFloat, radiusRange, nbOfGenerated)
+    demands::Vector{Vector{Float64}} = generateDemands(producer.numberOfProducts, nbOfGenerated, producer.capacity)
+    nbOfWindows = [rand(1:maxOfWindows) for i in 1:nbOfGenerated]
+    timeWindows::Vector{Vector{Int64}} = sort([sample(1:(nbOfDays*2),nbOfWindows[i],replace = false) for i in 1:nbOfGenerated])
+    
+    [Client_demijournee(coordinates[i], demands[i], timeWindows[i]) for i in 1:nbOfGenerated]
+    
+end
+
+function generatePointsWithinRadius(center::Vector{Float64}, radiusRange::Vector{Int64}, nbOfGenerated::Int64)::Vector{LatLon{Float64}}
     #=
     
     df = DataFrame(nom=String[], latitude=Float64[], longitude=Float64[])
@@ -38,8 +57,8 @@ function generatePointsWithinRadius(center::Vector{Float64}, radiusInMeters::Int
     res = Vector{LatLon{Float64}}(undef, nbOfGenerated)
 
     for i in 1:nbOfGenerated
-        radius_in_kilometers = radiusInMeters * 0.001
-        random_distance = rand() * radius_in_kilometers
+        radius_in_kilometers = 0.001 .* radiusRange
+        random_distance = rand(Uniform( radius_in_kilometers[1],radius_in_kilometers[2]))
         random_bearing = rand() * 360
         point = geodesic.distance(kilometers=random_distance).destination(center, random_bearing)
         res[i] = LatLon(point[1], point[2])
@@ -78,6 +97,7 @@ function generateTimeWindows(nbOfGenerated::Int64, sizeOfWindows::Int64, maxOfWi
     end
     res
 end
+
 #=
 producer = Producer(LatLon(47.347652435302734,0.6589514017105103),[[[600,1020]]],50,3)
 

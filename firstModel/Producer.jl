@@ -9,6 +9,3 @@ struct Producer
     numberOfProducts::Int64
 end
 
-function producerFromClientCSV
-
-end
