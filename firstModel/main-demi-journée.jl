@@ -21,7 +21,7 @@ function main()
 
     colors = ["black", "blue","BlueViolet", "Brown", "Chocolate", "Crimson", "DarkBlue", "DarkGreen",
     "DarkMagenta", "DarkRed", "FireBrick", "Green", "Indigo", "Maroon", "MediumBlue", "MidnightBlue", "Navy",
-    "Purple", "Sienna", "Red", "Gainsboro", "DarkOrchid", "DarkOrange", "DarkSlateGray", "DarkViolet"]
+    "Purple", "Sienna", "Red", "Gainsboro", "DarkOrchid", "DarkOrange", "DarkViolet"]
 
     defaultProducerTWs= [i for i in 1:10] #journées entières 8-18h
     producers = DataFrame(CSV.File("data\\cleanProducers.csv"))
@@ -40,6 +40,10 @@ function main()
         maxOfWindows, 
         nbOfDays)
 
+    for i in eachindex(clients)
+        println(clients[i].timeWindows)
+    end
+
     instance = Instance_MTCVRPMTW_demi_journees(producer, clients)
 
     coordinates = DataFrame(name=String[],latitude=Float64[], longitude=Float64[])
@@ -49,12 +53,15 @@ function main()
     end
     
     CSV.write("data\\$(producer.name)_$(nbOfClients)_clients_demi_journées.csv",  coordinates)
+    #res = MTCVRPMTW(instance)
+    res_v2 = MTCVRPMTW_v2(instance)
 
-    res = MTCVRPMTW(instance)
+    #displayDemiJournees(instance.clients, res)
 
-    displayDemiJournees(instance.clients, res)
+    displayDemiJournees_v2(instance.clients, res_v2)
 
-    visualizeRoutes_demijournees("data\\$(producer.name)_$(nbOfClients)_clients_demi_journées.csv", res, "views\\$(producer.name)_$(nbOfClients)_clients_demi_journées.html", colors)
+    #visualizeRoutes_demijournees("data\\$(producer.name)_$(nbOfClients)_clients_demi_journées.csv", res, "views\\$(producer.name)_$(nbOfClients)_clients_demi_journées.html", colors)
+    visualizeRoutes_demijournees("data\\$(producer.name)_$(nbOfClients)_clients_demi_journées.csv", res_v2, "views\\$(producer.name)_$(nbOfClients)_clients_demi_journées_v2.html", colors)
 
 end
 

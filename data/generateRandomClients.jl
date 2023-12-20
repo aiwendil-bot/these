@@ -40,7 +40,7 @@ function generateRandomClients_demijournees(
     coordinates::Vector{LatLon{Float64}} = generatePointsWithinRadius(producerCoordinatesFloat, radiusRange, nbOfGenerated)
     demands::Vector{Vector{Float64}} = generateDemands(producer.numberOfProducts, nbOfGenerated, producer.capacity)
     nbOfWindows = [rand(1:maxOfWindows) for i in 1:nbOfGenerated]
-    timeWindows::Vector{Vector{Int64}} = sort([sample(1:(nbOfDays*2),nbOfWindows[i],replace = false) for i in 1:nbOfGenerated])
+    timeWindows::Vector{Vector{Int64}} = [sort(sample(1:(nbOfDays*2),nbOfWindows[i],replace = false)) for i in 1:nbOfGenerated]
     
     [Client_demijournee(coordinates[i], demands[i], timeWindows[i]) for i in 1:nbOfGenerated]
     

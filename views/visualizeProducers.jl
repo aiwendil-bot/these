@@ -15,21 +15,15 @@ function visualizeProducers(input::String, output::String)
     m.save(output)
 end
 
-function visualizeProducerAndClient(input::String, res)
+function visualizeProducerAndClient(input::String, toursProducer, toursClients,w,times)
     folium = pyimport("folium")
     coordinates = DataFrame(CSV.File(input, delim=','))
 
-    y, w = res[3], res[5]
-
-    times = [minutesToDayHourMinutes(trunc(Int64,sum(value.(w[i,:])))) for i in 1:nrow(coordinates)]
-    toursClients = [r for r in axes(y,2), i in 2:nrow(coordinates) if (y[i,r] > 0.1)]
-
-    toursProducer = [r for r in axes(y,2) if (y[1,r] > 0.1)]
-    dayHoursMinutesProducer = [[minutesToDayHourMinutes(trunc(Int64,value(w[1,toursProducer[r]]))), minutesToDayHourMinutes(trunc(Int64,value(w[size(y,1),toursProducer[r]])+1)) ] for r in eachindex(toursProducer)]
+    dayHoursMinutesProducer = [[minutesToDayHourMinutes(trunc(Int64,value(w[1,toursProducer[r]]))), minutesToDayHourMinutes(trunc(Int64,value(w[size(coordinates,1)+1,toursProducer[r]])+1)) ] for r in eachindex(toursProducer)]
 
     stringTWsProducer = ["tour n°$(toursProducer[r]) : $(days[dayHoursMinutesProducer[r][1][1]]), $(dayHoursMinutesProducer[r][1][2]):$(dayHoursMinutesProducer[r][1][3]) - $(dayHoursMinutesProducer[r][2][2]):$(dayHoursMinutesProducer[r][2][3]) \n" for r in eachindex(toursProducer)]
 
-    m = folium.Map(location=[coordinates[2,2],coordinates[2,3]],
+    m = folium.Map(location=[coordinates[1,2],coordinates[1,3]],
         zoom_start=11)
     #PRODUCER
 
@@ -54,7 +48,7 @@ function visualizeProducerAndClient_demijournees(input::String, daysClients, tou
     folium = pyimport("folium")
     coordinates = DataFrame(CSV.File(input, delim=','))
 
-    m = folium.Map(location=[coordinates[2,2],coordinates[2,3]],
+    m = folium.Map(location=[coordinates[1,2],coordinates[1,3]],
         zoom_start=11)
     #PRODUCER
 

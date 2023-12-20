@@ -7,7 +7,7 @@ function MTCVRPMTW(instance::Instance_MTCVRPMTW)
     C::Vector{Int8} = [i for i in 2:(length(instance.clients)+1)] #indices clients
     R::Vector{Int8} = [i for i in 1:length(instance.clients)] #indices trips
     M::Vector{Int8} = [i for i in 1:length(instance.producer.numberOfProducts)] #indices produits
-    display(M)
+
     bigM::Int64 = 10080 #nb de minutes en 1 semaine 
 
     V::Vector{Int8} = collect(1:(length(C)+2)) # sommets clients et producer dupliqué
@@ -35,8 +35,6 @@ function MTCVRPMTW(instance::Instance_MTCVRPMTW)
     
     @variable(model, x[i in V, j in V, r in R ; (i,j) in A], Bin)
 
-    @variable(model, y[i in V, r in R], Bin)
-
     @variable(model, z[i in V,a = 1:nbOfTW[i],r in R], Bin)
 
     @variable(model, 0 <= w[i in V, r in R] <= bigM)
@@ -47,31 +45,31 @@ function MTCVRPMTW(instance::Instance_MTCVRPMTW)
 
     #------------ CONSTRAINTS -------------------------------------
 
-    @constraint(model, [i in C], sum(y[i,r] for r in R) == 1)
+    @constraint(model, base_name= "1_$i" ,[i in C], sum(x[i,j,r] for r in R for j in V if (i,j) in A) == 1)
 
-    @constraint(model, [i in C, r in R], sum(x[i,j,r] for j in V if (i,j) in A) == y[i,r])
+    @constraint(model,base_name= "2_$(i)_$r", [i in C, r in R], sum(x[i,j,r] for j in V if (i,j) in A) == sum(x[j,i,r] for j in V if (j,i) in A))
 
-    @constraint(model, [i in C, r in R], sum(x[j,i,r] for j in V if (j,i) in A) == y[i,r])
+    @constraint(model,base_name= "3_$r", [r in R], sum(x[1,i,r] for i in V if (1,i) in A ) == sum(x[i,nbOfVertices,r] for i in V if (i,nbOfVertices) in A))
 
-    @constraint(model, [r in R], sum(x[1,i,r] for i in V if (1,i) in A ) == y[1,r])
+    @constraint(model,base_name=  "4_$r",[r in R], sum(x[1,i,r] for i in V if (1,i) in A ) <= 1)
 
-    @constraint(model, [r in R], sum(x[i,nbOfVertices,r] for i in V if (i,nbOfVertices) in A) == y[nbOfVertices, r] )
+    @constraint(model,base_name=  "5_$r", [r in R], sum(x[i,nbOfVertices,r] for i in V if (i,nbOfVertices) in A) <=1)
 
-    @constraint(model, [r in R], sum(sum(instance.clients[i-1].demands) * y[i,r] for i in C) <= instance.producer.capacity)
+    @constraint(model, base_name= "6_$r", [r in R], sum(sum(instance.clients[i-1].demands) * x[i,j,r] for i in C for j in V if (i,j) in A) <= instance.producer.capacity)
 
-    @constraint(model, [i in V, r in R], sum(z[i,a,r] for a in 1:nbOfTW[i]) == y[i,r])
+    @constraint(model,base_name= "7_$(i)_$r", [i in V[1:(end-1)], r in R], sum(z[i,a,r] for a in 1:nbOfTW[i]) == sum(x[i,j,r] for j in V if (i,j) in A))
 
-    @constraint(model,[a in 1:nbOfTW[1] ,r in R], z[1,a,r] == z[nbOfVertices, a , r])
+    @constraint(model,base_name= "8_$a",[a in 1:nbOfTW[1] ,r in R], z[1,a,r] == z[nbOfVertices, a , r])
 
-    @constraint(model, [i in V, r in R], sum(z[i,a,r]*TW[i][a][1] for a in 1:nbOfTW[i]) <= w[i,r])
+    @constraint(model,base_name=  "9_$(i)_$r",[i in V, r in R], sum(z[i,a,r]*TW[i][a][1] for a in 1:nbOfTW[i]) <= w[i,r])
 
-    @constraint(model, [i in V, r in R], w[i,r] <= sum(z[i,a,r]*TW[i][a][2] for a in 1:nbOfTW[i]))
+    @constraint(model,base_name=  "10_$(i)_$r", [i in V, r in R], w[i,r] <= sum(z[i,a,r]*TW[i][a][2] for a in 1:nbOfTW[i]))
 
-    @constraint(model, [(i,j) in A, r in R], w[i,r] + t[i,j] <= w[j,r] + (1 - x[i,j,r]) * bigM)
+    @constraint(model, base_name= "11_$(i)_$(j)_$r", [(i,j) in A, r in R], w[i,r] + t[i,j] <= w[j,r] + (1 - x[i,j,r]) * bigM)
 
     @constraint(model, [r in R[1:end-1]], w[nbOfVertices, r] <= w[1, r+1] )
 
-    #println(model)
+    println(model)
     optimize!(model)
 
     function route(i,r,res)
@@ -80,7 +78,7 @@ function MTCVRPMTW(instance::Instance_MTCVRPMTW)
         end
         for j in V 
             if (i,j) in A
-                if (value(x[i,j,r,d]) > 0.1)
+                if (value(x[i,j,r]) > 0.1)
                     return vcat([i],route(j,r,res))
                 end
             end
@@ -90,10 +88,12 @@ function MTCVRPMTW(instance::Instance_MTCVRPMTW)
 
     routes = [route(1,r,[]) for r in R]   
     toursClients = [r for i in C for r in eachindex(routes) if i in routes[r]]
-
+    toursProducer = [r for r in R if (sum(value(x[1,j,r]) for j in V if (1,j) in A) > 0.1)]
+    display(toursProducer)
     dureesRoutes = [sum(value(x[i,j,r])*t[i,j] for (i,j) in A) for r in R]
+    times = [minutesToDayHourMinutes(trunc(Int64,sum(value.(w[i,:])))) for i in 1:(length(instance.clients)+1)]
 
-    return [objective_value(model), value.(x), value.(y), value.(z), w, routes, toursClients, dureesRoutes]
+    return [instance, objective_value(model), value.(x), value.(w), routes, toursProducer, toursClients, dureesRoutes,times]
 end
 #=
 test = Producer(LatLon(47.347652435302734,0.6589514017105103),
