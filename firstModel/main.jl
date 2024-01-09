@@ -1,12 +1,11 @@
 using CSV, DataFrames, Geodesy, Random, PyCall
-include("Client.jl")
 include("Producer.jl")
 include("Instance_MTCVRPMTW.jl")
-include("..\\data\\generateRandomClients.jl")
+include("..\\utils\\generateInstances\\generateRandomClients.jl")
 include("MTCVRPMTW.jl")
-include("..\\views\\visualizeRoutes.jl")
-include("utils.jl")
-include("..\\views\\affichagesTerminal\\terminal_timewindows.jl")
+include("..\\utils\\views\\visualizeRoutes.jl")
+include("..\\utils\\conversions.jl")
+include("..\\utils\\views\\affichagesTerminal\\terminal_timewindows.jl")
 
 Random.seed!(1234)
 
@@ -57,7 +56,7 @@ function main()
 
     displayTimeWindows(instance, res, maxOfWindows)
 
-    visualizeRoutes("data\\$(producer.name)_$(nbOfClients)_clients.csv", res, "views\\$(producer.name)_$(nbOfClients)_clients.html", colors)
+    visualizeRoutes("data\\$(producer.name)_$(nbOfClients)_clients.csv", res, "out\\firstModel\\$(producer.name)_$(nbOfClients)_clients.html", colors)
 
 end
 

@@ -1,7 +1,6 @@
 using PyCall, Random, DataFrames, CSV, StatsBase, Geodesy, DelimitedFiles, Distributions
-include("..\\firstModel\\Client.jl")
-include("..\\firstModel\\Producer.jl")
-include("..\\firstModel\\Producer_demijournees.jl")
+include("..\\..\\firstModel\\Producer.jl")
+include("..\\..\\firstModel_demi_journees\\Producer_demijournees.jl")
 
 function generateRandomClients(   
     producer::Producer,
@@ -47,12 +46,7 @@ function generateRandomClients_demijournees(
 end
 
 function generatePointsWithinRadius(center::Vector{Float64}, radiusRange::Vector{Int64}, nbOfGenerated::Int64)::Vector{LatLon{Float64}}
-    #=
-    
-    df = DataFrame(nom=String[], latitude=Float64[], longitude=Float64[])
-    
-    push!(df,("center",center[1], center[2]))
-    =#
+
     geodesic = pyimport("geopy.distance")
     res = Vector{LatLon{Float64}}(undef, nbOfGenerated)
 
@@ -62,7 +56,6 @@ function generatePointsWithinRadius(center::Vector{Float64}, radiusRange::Vector
         random_bearing = rand() * 360
         point = geodesic.distance(kilometers=random_distance).destination(center, random_bearing)
         res[i] = LatLon(point[1], point[2])
-        #push!(df,("client_$i", point[1], point[2] ))
     end 
 
     return res

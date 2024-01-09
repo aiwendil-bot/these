@@ -2,7 +2,6 @@ function displayTimeWindows(instance, res,maxOfWindows)
 
     w, routes, toursClients, dureesRoutes,times = res[4], res[5], res[7], res[8], res[9]
     dayHoursMinutesProducer = [[minutesToDayHourMinutes(trunc(Int64,w[1,r])), minutesToDayHourMinutes(trunc(Int64,w[length(instance.clients)+2,r]+1)) ] for r in eachindex(routes)]
-    display(dayHoursMinutesProducer)
     function routesStrings(r)::String
         res = ""
         for i in routes[r]

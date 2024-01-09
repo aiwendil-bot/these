@@ -5,7 +5,7 @@ function displayDemiJournees(clients, res)
     function routesStrings(r)::String
         res = ""
         for i in routes[r]
-            if (i == 1 || i == length(clients) + 2)
+            if (i == 1)
                 res *= " producer,"
             else
                 res *= " client_$(i-1),"
@@ -17,7 +17,7 @@ function displayDemiJournees(clients, res)
 
     for i in eachindex(clients)
         println("client_$i, demande totale : $(sum(clients[i].demands)), créneaux possibles : ", join(["$(daysStrings[j]), " for j in clients[i].timeWindows]))
-        println("\t desservi le $(daysStrings[daysClients[i]]) par le tour n°$(toursClients[i])")
+        println("\t livré le $(daysStrings[daysClients[i]]) par le tour n°$(toursClients[i])")
     end
     
     # routes

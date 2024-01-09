@@ -1,7 +1,7 @@
 using PyCall, StatsBase
 include("visualizeProducers.jl")
-include("..\\firstModel\\MTCVRPMTW.jl")
-include("..\\firstModel\\MTCVRPMTW-demi-journées.jl")
+include("..\\..\\firstModel\\MTCVRPMTW.jl")
+include("..\\..\\firstModel_demi_journees\\MTCVRPMTW-demi-journées.jl")
 
 function visualizeRoutes(input::String, res, output::String, colors)
 
@@ -27,16 +27,14 @@ function visualizeRoutes_demijournees(input::String, res, output::String, colors
 
     coordinates = DataFrame(CSV.File(input, delim=','))
     corresp = vcat([i for i in 1:nrow(coordinates)],[1])
-    instance, q, routes, days, toursClients = res[1], res[4], res[5], res[6], res[7]
+    instance, demands, routes, days, toursClients,daysRoutes = res[1], res[4], res[5], res[6], res[7], res[10]
 
     folium = pyimport("folium")
-    m = visualizeProducerAndClient_demijournees(input, days, toursClients, q)
-
-    colors_sample = sample(colors,length(instance.clients),replace=false)
+    m = visualizeProducerAndClient_demijournees(input, days, toursClients, demands)
 
     for r in eachindex(routes)
         scpoints = vcat([(coordinates[corresp[1],2], coordinates[corresp[1],3])], [(coordinates[corresp[i],2], coordinates[corresp[i],3]) for i in routes[r]])
-        folium.PolyLine(scpoints,color=colors_sample[r], weight=2.5, opacity=0.8).add_to(m)
+        folium.PolyLine(scpoints,color=colors[daysRoutes[r]], weight=2.5, opacity=0.8).add_to(m)
     end
 
     m.save(output)

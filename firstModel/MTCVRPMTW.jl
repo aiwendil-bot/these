@@ -1,4 +1,4 @@
-using JuMP, GLPK
+using JuMP, CPLEX
 include("Producer.jl")
 include("Instance_MTCVRPMTW.jl")
 
@@ -29,7 +29,7 @@ function MTCVRPMTW(instance::Instance_MTCVRPMTW)
     [instance.producer.timeWindows]) #vecteur des TW (dépôt dupliqué et clients)
     nbOfTW = length.(TW)
 
-    model = Model(GLPK.Optimizer)
+    model = Model(CPLEX.Optimizer)
 
     #------------ VARIABLES --------------------------------------
     
@@ -69,7 +69,6 @@ function MTCVRPMTW(instance::Instance_MTCVRPMTW)
 
     @constraint(model, [r in R[1:end-1]], w[nbOfVertices, r] <= w[1, r+1] )
 
-    println(model)
     optimize!(model)
 
     function route(i,r,res)
@@ -89,7 +88,6 @@ function MTCVRPMTW(instance::Instance_MTCVRPMTW)
     routes = [route(1,r,[]) for r in R]   
     toursClients = [r for i in C for r in eachindex(routes) if i in routes[r]]
     toursProducer = [r for r in R if (sum(value(x[1,j,r]) for j in V if (1,j) in A) > 0.1)]
-    display(toursProducer)
     dureesRoutes = [sum(value(x[i,j,r])*t[i,j] for (i,j) in A) for r in R]
     times = [minutesToDayHourMinutes(trunc(Int64,sum(value.(w[i,:])))) for i in 1:(length(instance.clients)+1)]
 

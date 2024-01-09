@@ -44,7 +44,7 @@ function visualizeProducerAndClient(input::String, toursProducer, toursClients,w
 end
 
 
-function visualizeProducerAndClient_demijournees(input::String, daysClients, toursClients, q)
+function visualizeProducerAndClient_demijournees(input::String, daysClients, toursClients, demands)
     folium = pyimport("folium")
     coordinates = DataFrame(CSV.File(input, delim=','))
 
@@ -60,7 +60,7 @@ function visualizeProducerAndClient_demijournees(input::String, daysClients, tou
 
     for i in 2:nrow(coordinates)
         myloc = coordinates[i,:]
-        popuptxt = myloc["name"] * "\t" * string(myloc["latitude"]) *  "\t" * string(myloc["longitude"]) *  "\t" * "tour n°$(toursClients[i-1])" * "\t" *daysStrings[daysClients[i-1]]
+        popuptxt = myloc["name"] * "\t" * string(myloc["latitude"]) *  "\t" * string(myloc["longitude"]) *  "\t" * "tour n°$(toursClients[i-1])" * "\t" *daysStrings[daysClients[i-1]] * "\n" * "demande : " *string(demands[i])
         folium.Marker(location=[myloc["latitude"], myloc["longitude"]], popup=popuptxt,icon=folium.Icon(icon="person", color = "blue",prefix="fa")).add_to(m)
 
     end

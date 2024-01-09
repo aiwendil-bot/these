@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f3b3c420cd6655537656cb71878e7015 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f3b3c420cd6655537656cb71878e7015" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f3b3c420cd6655537656cb71878e7015 = L.map(
+                "map_f3b3c420cd6655537656cb71878e7015",
+                {
+                    center: [47.41906, 1.44406],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0d85e7c82cf4214e36e437a3e5692892 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_0d85e7c82cf4214e36e437a3e5692892.addTo(map_f3b3c420cd6655537656cb71878e7015);
+        
+    
+            var marker_5bf36dd660c058d64e71f4129cf11746 = L.marker(
+                [47.41906, 1.44406],
+                {}
+            ).addTo(map_f3b3c420cd6655537656cb71878e7015);
+        
+    
+            var icon_718d5a0e1737e9b68aa2eb1c340e6925 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "seedling", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_5bf36dd660c058d64e71f4129cf11746.setIcon(icon_718d5a0e1737e9b68aa2eb1c340e6925);
+        
+    
+        var popup_ccf159cf3ec386c439a89dbf2bb90adf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_01620d2e7b5dde353d7ba6494b7ff3b1 = $(`<div id="html_01620d2e7b5dde353d7ba6494b7ff3b1" style="width: 100.0%; height: 100.0%;">'AgroPaul'	47.41906	1.44406</div>`)[0];
+                popup_ccf159cf3ec386c439a89dbf2bb90adf.setContent(html_01620d2e7b5dde353d7ba6494b7ff3b1);
+            
+        
+
+        marker_5bf36dd660c058d64e71f4129cf11746.bindPopup(popup_ccf159cf3ec386c439a89dbf2bb90adf)
+        ;
+
+        
+    
+    
+            var marker_511bdd06fa51e211765773a1f8bdf448 = L.marker(
+                [47.387512468723536, 1.3368139931954395],
+                {}
+            ).addTo(map_f3b3c420cd6655537656cb71878e7015);
+        
+    
+            var icon_0c8e01af90b8a08f1f6cb00bf361befe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "person", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_511bdd06fa51e211765773a1f8bdf448.setIcon(icon_0c8e01af90b8a08f1f6cb00bf361befe);
+        
+    
+        var popup_3258df1318b9f05bcbcae96c56ffb391 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d4ec5371ffd46b49209af401e5d50609 = $(`<div id="html_d4ec5371ffd46b49209af401e5d50609" style="width: 100.0%; height: 100.0%;">client_1	47.387512468723536	1.3368139931954395	tour n°1	vendredi matin demande : 27.33</div>`)[0];
+                popup_3258df1318b9f05bcbcae96c56ffb391.setContent(html_d4ec5371ffd46b49209af401e5d50609);
+            
+        
+
+        marker_511bdd06fa51e211765773a1f8bdf448.bindPopup(popup_3258df1318b9f05bcbcae96c56ffb391)
+        ;
+
+        
+    
+    
+            var marker_5338f53caee2b5a4a25521745e9e5d51 = L.marker(
+                [47.29299884561614, 1.1980160477937458],
+                {}
+            ).addTo(map_f3b3c420cd6655537656cb71878e7015);
+        
+    
+            var icon_aaf65616ef1760b76892aade8f6d523f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "person", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_5338f53caee2b5a4a25521745e9e5d51.setIcon(icon_aaf65616ef1760b76892aade8f6d523f);
+        
+    
+        var popup_597cb4e7703aa9286e4de7c6d8ee6ec6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_66b8ab577606a6f5364bac17f4a780e7 = $(`<div id="html_66b8ab577606a6f5364bac17f4a780e7" style="width: 100.0%; height: 100.0%;">client_2	47.29299884561614	1.1980160477937458	tour n°2	lundi après-midi demande : 27.9</div>`)[0];
+                popup_597cb4e7703aa9286e4de7c6d8ee6ec6.setContent(html_66b8ab577606a6f5364bac17f4a780e7);
+            
+        
+
+        marker_5338f53caee2b5a4a25521745e9e5d51.bindPopup(popup_597cb4e7703aa9286e4de7c6d8ee6ec6)
+        ;
+
+        
+    
+    
+            var marker_68524ea93da863c4536dfc0eec2e89d0 = L.marker(
+                [47.55912203149546, 1.589908332557895],
+                {}
+            ).addTo(map_f3b3c420cd6655537656cb71878e7015);
+        
+    
+            var icon_e4598efbeba91617bfb56b5c662e36cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "person", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_68524ea93da863c4536dfc0eec2e89d0.setIcon(icon_e4598efbeba91617bfb56b5c662e36cd);
+        
+    
+        var popup_1ff5d930d7f177f0e9e1281d16cc82eb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_27c866131d218c7831413aeaf73709df = $(`<div id="html_27c866131d218c7831413aeaf73709df" style="width: 100.0%; height: 100.0%;">client_3	47.55912203149546	1.589908332557895	tour n°3	jeudi après-midi demande : 24.22</div>`)[0];
+                popup_1ff5d930d7f177f0e9e1281d16cc82eb.setContent(html_27c866131d218c7831413aeaf73709df);
+            
+        
+
+        marker_68524ea93da863c4536dfc0eec2e89d0.bindPopup(popup_1ff5d930d7f177f0e9e1281d16cc82eb)
+        ;
+
+        
+    
+    
+            var marker_d3b3fd91dfccaa46653724e06d4a47b1 = L.marker(
+                [47.50744902693059, 1.4649759851823259],
+                {}
+            ).addTo(map_f3b3c420cd6655537656cb71878e7015);
+        
+    
+            var icon_ecef63c3c96cd49f30b68edf1f05eb38 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "person", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d3b3fd91dfccaa46653724e06d4a47b1.setIcon(icon_ecef63c3c96cd49f30b68edf1f05eb38);
+        
+    
+        var popup_d8e63cd91dcbaca5c3c086f316131dde = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db9df9b1478ef93089f9572cb6a4fe12 = $(`<div id="html_db9df9b1478ef93089f9572cb6a4fe12" style="width: 100.0%; height: 100.0%;">client_4	47.50744902693059	1.4649759851823259	tour n°4	mardi matin demande : 24.16</div>`)[0];
+                popup_d8e63cd91dcbaca5c3c086f316131dde.setContent(html_db9df9b1478ef93089f9572cb6a4fe12);
+            
+        
+
+        marker_d3b3fd91dfccaa46653724e06d4a47b1.bindPopup(popup_d8e63cd91dcbaca5c3c086f316131dde)
+        ;
+
+        
+    
+    
+            var marker_6c62c42fdccbb0ee585471ac6ce27540 = L.marker(
+                [47.40338800084216, 1.325043216449962],
+                {}
+            ).addTo(map_f3b3c420cd6655537656cb71878e7015);
+        
+    
+            var icon_e7ca2b92ad0888eb0448656bcc7f2432 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "person", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6c62c42fdccbb0ee585471ac6ce27540.setIcon(icon_e7ca2b92ad0888eb0448656bcc7f2432);
+        
+    
+        var popup_9d3c6a5c5d355c87056c83667845a731 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b8178d88ce9c089a4bd8ca3f919564ad = $(`<div id="html_b8178d88ce9c089a4bd8ca3f919564ad" style="width: 100.0%; height: 100.0%;">client_5	47.40338800084216	1.325043216449962	tour n°4	mardi matin demande : 24.78</div>`)[0];
+                popup_9d3c6a5c5d355c87056c83667845a731.setContent(html_b8178d88ce9c089a4bd8ca3f919564ad);
+            
+        
+
+        marker_6c62c42fdccbb0ee585471ac6ce27540.bindPopup(popup_9d3c6a5c5d355c87056c83667845a731)
+        ;
+
+        
+    
+    
+            var poly_line_33feee481b20af5fca4b5855830c5962 = L.polyline(
+                [[47.41906, 1.44406], [47.41906, 1.44406], [47.387512468723536, 1.3368139931954395], [47.41906, 1.44406]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_f3b3c420cd6655537656cb71878e7015);
+        
+    
+            var poly_line_8d4588f492b5d0ca8dd5620084849727 = L.polyline(
+                [[47.41906, 1.44406], [47.41906, 1.44406], [47.29299884561614, 1.1980160477937458], [47.41906, 1.44406]],
+                {"bubblingMouseEvents": true, "color": "darkviolet", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkviolet", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_f3b3c420cd6655537656cb71878e7015);
+        
+    
+            var poly_line_14af9efcd1389be53f235cf2655fbb2f = L.polyline(
+                [[47.41906, 1.44406], [47.41906, 1.44406], [47.55912203149546, 1.589908332557895], [47.41906, 1.44406]],
+                {"bubblingMouseEvents": true, "color": "darkorange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkorange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_f3b3c420cd6655537656cb71878e7015);
+        
+    
+            var poly_line_136b9b18410166b44e44a0a8ab1d8449 = L.polyline(
+                [[47.41906, 1.44406], [47.41906, 1.44406], [47.50744902693059, 1.4649759851823259], [47.40338800084216, 1.325043216449962], [47.41906, 1.44406]],
+                {"bubblingMouseEvents": true, "color": "dodgerblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "dodgerblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_f3b3c420cd6655537656cb71878e7015);
+        
+</script>
+</html>
