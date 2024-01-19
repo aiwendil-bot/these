@@ -10,18 +10,18 @@ include("..\\firstModel_demi_journees\\Producer_demijournees.jl")
 include("..\\firstModel_demi_journees\\MTCVRPMTW-demi-journées.jl")
 include("..\\firstModel_demi_journees\\Instance_MTCVRPMTW_demi_journees.jl")
 include("..\\utils\\views\\affichagesTerminal\\terminal_demi_journees.jl")
-Random.seed!(1234)
+#Random.seed!(1234)
 
 function main()
 
     nbOfDays = 5
     capacityProducers = 50
-    nbOfProducers = 4
-    nbOfClients = 6
+    nbOfProducers = 3
+    nbOfClients = 5
     radiusMinInMeters = 3000
     radiusMaxInMeters = 25000
     maxOfWindows = 5
-    time_limit = 30.0
+    #time_limit = 30.0
 
     colors = ["black", "blue","BlueViolet", "Brown", "Chocolate", "Crimson", "DarkBlue", "DarkGreen",
     "DarkMagenta", "DarkRed", "FireBrick", "Green", "Indigo", "Maroon", "MediumBlue", "MidnightBlue", "Navy",
@@ -33,7 +33,7 @@ function main()
     producers_DF = DataFrame(CSV.File("data\\cleanProducers.csv"))
     #producers_indices = sample(1:nrow(producers_DF),nbOfProducers,replace=false)
     #producers_indices = [105, 101, 18, 5, 56]
-    producers_indices = [105,101,18,5]
+    producers_indices = [105,101,18]
     producers = [Producer_mutualisation(
         producers_DF[p,1],
         LatLon(producers_DF[p,2],producers_DF[p,3]),
@@ -119,7 +119,7 @@ function main()
 
     #mutualisation
     @info "resolution de l'instance mutualisée ..."
-    res_mutualisation = mutualisationModel(instance_mutualisation, time_limit)
+    res_mutualisation = mutualisationModel(instance_mutualisation)
 
     visualizeRoutes_mutualisation_v1(pathCSV, res_mutualisation, pathMap, colorsProducers)
 

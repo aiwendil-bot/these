@@ -1,7 +1,7 @@
 using JuMP, GLPK, CPLEX
 include("Instance_mutualisation.jl")
 
-function mutualisationModel(instance::Instance_mutualisation, time_limit::Float64)
+function mutualisationModel(instance::Instance_mutualisation)
 
     P::Vector{Int8} = [i for i in eachindex(instance.producers)]
     C::Vector{Int8} = [length(P) + i for i in eachindex(instance.clients)]
@@ -175,7 +175,7 @@ function mutualisationModel(instance::Instance_mutualisation, time_limit::Float6
     tournees = [filter!(x -> length(x) > 0, [routes(p,k,[]) for k in N]) for p in P]
     #display(tournees)
     whoServedWhoAndWhen = [[day(p,i) for p in P] for i in N]
-    display(whoServedWhoAndWhen)
+    #display(whoServedWhoAndWhen)
     whoServedWho = [[p for p in eachindex(tournees) if !isempty(tournees[p]) && i in reduce(vcat,tournees[p]) && i != p] for i in N] #quel producteur a desservi chaque client
     #display(visitDays)
     daysRoutes = [day(tour[1],tour[2])[2] for p in eachindex(tournees) for tour in tournees[p]]
