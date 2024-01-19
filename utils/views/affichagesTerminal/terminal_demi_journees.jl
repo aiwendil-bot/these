@@ -35,7 +35,7 @@ function displayDemiJournees(clients, res)
 
 end
 
-function displayDemiJournees_v2(clients, res)
+function displayDemiJournees_v2(current_clients, clients, res)
 
     routes, daysClients, toursClients, dureesRoutes, dureeDemiJournees = res[5], res[6], res[7], res[8], res[9] 
 
@@ -45,7 +45,7 @@ function displayDemiJournees_v2(clients, res)
             if (i == 1 || i == length(clients) + 2)
                 res *= " producer,"
             else
-                res *= " client_$(i-1),"
+                res *= " $(current_clients[i-1]),"
             end
         end
         return res
@@ -53,7 +53,7 @@ function displayDemiJournees_v2(clients, res)
     # disponibilités
 
     for i in eachindex(clients)
-        println("client_$i, demande totale : $(sum(clients[i].demands)), créneaux possibles : ", join(["$(daysStrings[j]), " for j in clients[i].timeWindows]))
+        println("$(current_clients[i]), demande totale : $(sum(clients[i].demands)), créneaux possibles : ", join(["$(daysStrings[j]), " for j in clients[i].timeWindows]))
         println("\t desservi le $(daysStrings[daysClients[i]]) par le tour n°$(toursClients[i])")
     end
     

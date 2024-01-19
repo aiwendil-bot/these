@@ -56,7 +56,7 @@ function main()
 
     displayTimeWindows(instance, res, maxOfWindows)
 
-    visualizeRoutes("data\\$(producer.name)_$(nbOfClients)_clients.csv", res, "out\\firstModel\\$(producer.name)_$(nbOfClients)_clients.html", colors)
+    visualizeRoutes("data\\timeWindows\\$(producer.name)_$(nbOfClients)_clients.csv", res, "out\\firstModel\\$(producer.name)_$(nbOfClients)_clients.html", colors)
 
 end
 

@@ -49,12 +49,12 @@ function main()
         push!(coordinates, ("client_$i",clients[i].coordinates.lat,clients[i].coordinates.lon))
     end
     
-    CSV.write("data\\$(producer.name)_$(nbOfClients)_clients_demi_journées.csv",  coordinates)
+    CSV.write("data\\demi_journees\\$(producer.name)_$(nbOfClients)_clients_demi_journées.csv",  coordinates)
     res_v2 = MTCVRPMTW_v2(instance)
 
     displayDemiJournees_v2(instance.clients, res_v2)
 
-    visualizeRoutes_demijournees("data\\$(producer.name)_$(nbOfClients)_clients_demi_journées.csv", res_v2, "out\\firstModel_demi_journees\\$(producer.name)_$(nbOfClients)_clients_demi_journées_v2.html", colorsWeek)
+    visualizeRoutes_demijournees("data\\demi_journees\\$(producer.name)_$(nbOfClients)_clients_demi_journées.csv", res_v2, "out\\firstModel_demi_journees\\$(producer.name)_$(nbOfClients)_clients_demi_journées_v2.html", colorsWeek)
 
 end
 

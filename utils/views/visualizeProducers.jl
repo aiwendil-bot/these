@@ -66,3 +66,34 @@ function visualizeProducerAndClient_demijournees(input::String, daysClients, tou
     end
     m
 end
+
+function visualizeProducerAndClient_mutualisation_v1(input::String, instance, whoServedWhoAndWhen, demands, colors)
+    folium = pyimport("folium")
+    coordinates = DataFrame(CSV.File(input, delim=','))
+
+    nbOfProducers = length(instance.producers)
+
+    lat_moyenne = sum([coordinates[i,2] for i in 1:nrow(coordinates)]) / nrow(coordinates)
+    long_moyenne = sum([coordinates[i,3] for i in 1:nrow(coordinates)]) / nrow(coordinates)
+
+    m = folium.Map(location=[lat_moyenne,long_moyenne],
+        zoom_start=11)
+
+
+    #PRODUCER
+
+    for p in 1:nbOfProducers
+        myloc = coordinates[p,:]
+        popuptxt = myloc["name"] * "\t" * string(myloc["latitude"]) *  "\t" * string(myloc["longitude"]) * visitDays(instance, whoServedWhoAndWhen,p)
+        folium.Marker(location=[myloc["latitude"], myloc["longitude"]], popup=popuptxt,icon=folium.Icon(icon="seedling",color = colors[p],prefix = "fa"),).add_to(m)
+    end
+    #CLIENTS
+
+    for i in (nbOfProducers + 1):nrow(coordinates)
+        myloc = coordinates[i,:]
+        popuptxt = myloc["name"] * "\t" * string(myloc["latitude"]) *  "\t" * string(myloc["longitude"]) * "\t" * visitDays(instance, whoServedWhoAndWhen,i) * "\n" * "demande : " *string(demands[i-nbOfProducers])
+        folium.Marker(location=[myloc["latitude"], myloc["longitude"]], popup=popuptxt,icon=folium.Icon(icon="person", color = "blue",prefix="fa")).add_to(m)
+
+    end
+    m
+end

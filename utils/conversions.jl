@@ -20,3 +20,13 @@ function matinaprem(i)::String
 end
 
 daysStrings = [days[i÷2] * " " * matinaprem(i) for i in 0:9]
+
+function visitDays(instance, whoServedWhoAndWhen,i)::String
+    res = ""
+    for d in eachindex(whoServedWhoAndWhen[i])
+        if whoServedWhoAndWhen[i][d][2] > 0
+            res *= "visité le $(daysStrings[whoServedWhoAndWhen[i][d][2]]) par $(instance.producers[whoServedWhoAndWhen[i][d][1]].name) \n"
+        end
+    end
+    return res
+end

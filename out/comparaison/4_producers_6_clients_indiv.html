@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_491506e250263afcbb5de1a626608941 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_491506e250263afcbb5de1a626608941" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_491506e250263afcbb5de1a626608941 = L.map(
+                "map_491506e250263afcbb5de1a626608941",
+                {
+                    center: [47.829960374365875, 1.4064150473371637],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0c6c8dbd2cb761e6d4b662891f3bc6b1 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_0c6c8dbd2cb761e6d4b662891f3bc6b1.addTo(map_491506e250263afcbb5de1a626608941);
+        
+    
+            var marker_472e720141281f2195865c319e46705d = L.marker(
+                [47.8228, 1.30242],
+                {}
+            ).addTo(map_491506e250263afcbb5de1a626608941);
+        
+    
+            var icon_6804efdb5181e7ef4e3a3f6d57b2fdca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "seedling", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_472e720141281f2195865c319e46705d.setIcon(icon_6804efdb5181e7ef4e3a3f6d57b2fdca);
+        
+    
+        var popup_93668516f5e355973acf281a043942e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2dc531e63dbeaa1e4146fdb7060df0a7 = $(`<div id="html_2dc531e63dbeaa1e4146fdb7060df0a7" style="width: 100.0%; height: 100.0%;">'SCEA la Croix des Vignes'	47.8228	1.30242</div>`)[0];
+                popup_93668516f5e355973acf281a043942e9.setContent(html_2dc531e63dbeaa1e4146fdb7060df0a7);
+            
+        
+
+        marker_472e720141281f2195865c319e46705d.bindPopup(popup_93668516f5e355973acf281a043942e9)
+        ;
+
+        
+    
+    
+            var marker_de534058a408ae36f959f129552b0d6a = L.marker(
+                [47.80865, 1.38591],
+                {}
+            ).addTo(map_491506e250263afcbb5de1a626608941);
+        
+    
+            var icon_a75f0634605aa28a743b0a9ae547e285 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "seedling", "iconColor": "white", "markerColor": "darkblue", "prefix": "fa"}
+            );
+            marker_de534058a408ae36f959f129552b0d6a.setIcon(icon_a75f0634605aa28a743b0a9ae547e285);
+        
+    
+        var popup_b5044374bca0524f1f8bc1b38835455a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c5c5db590274083ddfa5e5a97aa0744c = $(`<div id="html_c5c5db590274083ddfa5e5a97aa0744c" style="width: 100.0%; height: 100.0%;">'SCEA Les Vergers'	47.80865	1.38591</div>`)[0];
+                popup_b5044374bca0524f1f8bc1b38835455a.setContent(html_c5c5db590274083ddfa5e5a97aa0744c);
+            
+        
+
+        marker_de534058a408ae36f959f129552b0d6a.bindPopup(popup_b5044374bca0524f1f8bc1b38835455a)
+        ;
+
+        
+    
+    
+            var marker_37dff28820f1e5307f4be466d4f734fe = L.marker(
+                [47.79569, 1.44973],
+                {}
+            ).addTo(map_491506e250263afcbb5de1a626608941);
+        
+    
+            var icon_51cdb4d30e2b1a4dc06be95b32284af4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "seedling", "iconColor": "white", "markerColor": "darkgreen", "prefix": "fa"}
+            );
+            marker_37dff28820f1e5307f4be466d4f734fe.setIcon(icon_51cdb4d30e2b1a4dc06be95b32284af4);
+        
+    
+        var popup_7ea29bab7f25d63f7d7efeeb3c144197 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7cf1ee96de34647b6cd1ca7aa81bd91a = $(`<div id="html_7cf1ee96de34647b6cd1ca7aa81bd91a" style="width: 100.0%; height: 100.0%;">'EARL DAVEAU'	47.79569	1.44973</div>`)[0];
+                popup_7ea29bab7f25d63f7d7efeeb3c144197.setContent(html_7cf1ee96de34647b6cd1ca7aa81bd91a);
+            
+        
+
+        marker_37dff28820f1e5307f4be466d4f734fe.bindPopup(popup_7ea29bab7f25d63f7d7efeeb3c144197)
+        ;
+
+        
+    
+    
+            var marker_cbd94ef8fb4254c138c3d21729a7f4d3 = L.marker(
+                [47.834, 1.42053],
+                {}
+            ).addTo(map_491506e250263afcbb5de1a626608941);
+        
+    
+            var icon_0435d0b5288c314fe25ac1bf76deee3a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "seedling", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_cbd94ef8fb4254c138c3d21729a7f4d3.setIcon(icon_0435d0b5288c314fe25ac1bf76deee3a);
+        
+    
+        var popup_6451e3124e83dc23f90fe1d29204e73e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57bc1465a383529f8f9703632a506e93 = $(`<div id="html_57bc1465a383529f8f9703632a506e93" style="width: 100.0%; height: 100.0%;">'Arlesthis'	47.834	1.42053</div>`)[0];
+                popup_6451e3124e83dc23f90fe1d29204e73e.setContent(html_57bc1465a383529f8f9703632a506e93);
+            
+        
+
+        marker_cbd94ef8fb4254c138c3d21729a7f4d3.bindPopup(popup_6451e3124e83dc23f90fe1d29204e73e)
+        ;
+
+        
+    
+    
+            var marker_8ce1747d91af2806ba994d816619ba1e = L.marker(
+                [47.823489408173245, 1.6090125887696485],
+                {}
+            ).addTo(map_491506e250263afcbb5de1a626608941);
+        
+    
+            var icon_e743ff7d250aa109bd1514af4052092c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "person", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8ce1747d91af2806ba994d816619ba1e.setIcon(icon_e743ff7d250aa109bd1514af4052092c);
+        
+    
+        var popup_afeb09c64f8dbca83ef8c95ad62a911f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e18dc35cb4840bf1677acb640200af58 = $(`<div id="html_e18dc35cb4840bf1677acb640200af58" style="width: 100.0%; height: 100.0%;">client_1	47.823489408173245	1.6090125887696485jeudi matin par 'SCEA la Croix des Vignes', demande : 3.12	jeudi matin par 'EARL DAVEAU', demande : 15.25	</div>`)[0];
+                popup_afeb09c64f8dbca83ef8c95ad62a911f.setContent(html_e18dc35cb4840bf1677acb640200af58);
+            
+        
+
+        marker_8ce1747d91af2806ba994d816619ba1e.bindPopup(popup_afeb09c64f8dbca83ef8c95ad62a911f)
+        ;
+
+        
+    
+    
+            var marker_f916d8ab43a88c8b166d3f62580bc74e = L.marker(
+                [47.772101336335034, 1.2331169613170476],
+                {}
+            ).addTo(map_491506e250263afcbb5de1a626608941);
+        
+    
+            var icon_a45754d3776f1e2baecf1a776b9cf5e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "person", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f916d8ab43a88c8b166d3f62580bc74e.setIcon(icon_a45754d3776f1e2baecf1a776b9cf5e6);
+        
+    
+        var popup_e341ea67afe73b06e4849359d7151e88 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87750a53c6638f59660ee0f183821aa8 = $(`<div id="html_87750a53c6638f59660ee0f183821aa8" style="width: 100.0%; height: 100.0%;">client_2	47.772101336335034	1.2331169613170476jeudi matin par 'SCEA la Croix des Vignes', demande : 7.145	jeudi matin par 'SCEA Les Vergers', demande : 0.909	jeudi matin par 'EARL DAVEAU', demande : 8.766	jeudi après-midi par 'Arlesthis', demande : 1.19	</div>`)[0];
+                popup_e341ea67afe73b06e4849359d7151e88.setContent(html_87750a53c6638f59660ee0f183821aa8);
+            
+        
+
+        marker_f916d8ab43a88c8b166d3f62580bc74e.bindPopup(popup_e341ea67afe73b06e4849359d7151e88)
+        ;
+
+        
+    
+    
+            var marker_5f2b88c236fc35c8555e5ddf40b08fc8 = L.marker(
+                [47.95571856364067, 1.0408360970316561],
+                {}
+            ).addTo(map_491506e250263afcbb5de1a626608941);
+        
+    
+            var icon_f979c24766ab2a76b1a2ba2b023c920c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "person", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_5f2b88c236fc35c8555e5ddf40b08fc8.setIcon(icon_f979c24766ab2a76b1a2ba2b023c920c);
+        
+    
+        var popup_12dafd6774b925fda175fe05a6805b1a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_975a55cf89495b3ccaaa1f60f2bcfc8a = $(`<div id="html_975a55cf89495b3ccaaa1f60f2bcfc8a" style="width: 100.0%; height: 100.0%;">client_3	47.95571856364067	1.0408360970316561jeudi matin par 'SCEA Les Vergers', demande : 17.66	jeudi matin par 'EARL DAVEAU', demande : 11.055	</div>`)[0];
+                popup_12dafd6774b925fda175fe05a6805b1a.setContent(html_975a55cf89495b3ccaaa1f60f2bcfc8a);
+            
+        
+
+        marker_5f2b88c236fc35c8555e5ddf40b08fc8.bindPopup(popup_12dafd6774b925fda175fe05a6805b1a)
+        ;
+
+        
+    
+    
+            var marker_e7fbb168446a1e67d413ee80e0f01ee9 = L.marker(
+                [47.85767545569691, 1.6825972225989378],
+                {}
+            ).addTo(map_491506e250263afcbb5de1a626608941);
+        
+    
+            var icon_2a9725c8ebe5a3f015cd5cddcb7032e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "person", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e7fbb168446a1e67d413ee80e0f01ee9.setIcon(icon_2a9725c8ebe5a3f015cd5cddcb7032e9);
+        
+    
+        var popup_5e4f99bb59556c20686966f3ff86c8a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_280d1b521dc5b3c87c6a56494449ff9e = $(`<div id="html_280d1b521dc5b3c87c6a56494449ff9e" style="width: 100.0%; height: 100.0%;">client_4	47.85767545569691	1.6825972225989378jeudi matin par 'SCEA la Croix des Vignes', demande : 6.273	jeudi matin par 'SCEA Les Vergers', demande : 9.43	jeudi matin par 'EARL DAVEAU', demande : 2.871	</div>`)[0];
+                popup_5e4f99bb59556c20686966f3ff86c8a7.setContent(html_280d1b521dc5b3c87c6a56494449ff9e);
+            
+        
+
+        marker_e7fbb168446a1e67d413ee80e0f01ee9.bindPopup(popup_5e4f99bb59556c20686966f3ff86c8a7)
+        ;
+
+        
+    
+    
+            var marker_018f00a08aa7390c3dbd3b392b303873 = L.marker(
+                [47.813933327799866, 1.4803354727175377],
+                {}
+            ).addTo(map_491506e250263afcbb5de1a626608941);
+        
+    
+            var icon_68870c8ef7dd9b4cea2e6e1e2f5ae47d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "person", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_018f00a08aa7390c3dbd3b392b303873.setIcon(icon_68870c8ef7dd9b4cea2e6e1e2f5ae47d);
+        
+    
+        var popup_be4ce953b43d63c751cf62867c1c219a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf76fb18aa98a8053c69c038aa9d4b2e = $(`<div id="html_cf76fb18aa98a8053c69c038aa9d4b2e" style="width: 100.0%; height: 100.0%;">client_5	47.813933327799866	1.4803354727175377jeudi matin par 'SCEA la Croix des Vignes', demande : 8.87	jeudi matin par 'EARL DAVEAU', demande : 1.22	jeudi après-midi par 'Arlesthis', demande : 8.36	</div>`)[0];
+                popup_be4ce953b43d63c751cf62867c1c219a.setContent(html_cf76fb18aa98a8053c69c038aa9d4b2e);
+            
+        
+
+        marker_018f00a08aa7390c3dbd3b392b303873.bindPopup(popup_be4ce953b43d63c751cf62867c1c219a)
+        ;
+
+        
+    
+    
+            var marker_513e8f269d5143603d495869ae88f851 = L.marker(
+                [47.815545652012965, 1.459662130936808],
+                {}
+            ).addTo(map_491506e250263afcbb5de1a626608941);
+        
+    
+            var icon_2cacc77c98c08a4586081c759b96e246 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "person", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_513e8f269d5143603d495869ae88f851.setIcon(icon_2cacc77c98c08a4586081c759b96e246);
+        
+    
+        var popup_f817cb8df576c9ccf68893755f58353d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c3b194d236ee5162265a8bdf081c3da = $(`<div id="html_0c3b194d236ee5162265a8bdf081c3da" style="width: 100.0%; height: 100.0%;">client_6	47.815545652012965	1.459662130936808vendredi après-midi par 'SCEA la Croix des Vignes', demande : 13.66	jeudi après-midi par 'EARL DAVEAU', demande : 13.21	jeudi après-midi par 'Arlesthis', demande : 16.12	</div>`)[0];
+                popup_f817cb8df576c9ccf68893755f58353d.setContent(html_0c3b194d236ee5162265a8bdf081c3da);
+            
+        
+
+        marker_513e8f269d5143603d495869ae88f851.bindPopup(popup_f817cb8df576c9ccf68893755f58353d)
+        ;
+
+        
+    
+    
+            var poly_line_7cde3c1ea039f10b1382fdd012702476 = L.polyline(
+                [[47.8228, 1.30242], [47.8228, 1.30242], [47.85767545569691, 1.6825972225989378], [47.823489408173245, 1.6090125887696485], [47.813933327799866, 1.4803354727175377], [47.772101336335034, 1.2331169613170476], [47.8228, 1.30242]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_491506e250263afcbb5de1a626608941);
+        
+    
+            var poly_line_706b2a4f62a63eb63aa94527494a0a76 = L.polyline(
+                [[47.8228, 1.30242], [47.8228, 1.30242], [47.815545652012965, 1.459662130936808], [47.8228, 1.30242]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_491506e250263afcbb5de1a626608941);
+        
+    
+            var poly_line_46a8a895fac7e39d37cf12552e5382ac = L.polyline(
+                [[47.80865, 1.38591], [47.80865, 1.38591], [47.85767545569691, 1.6825972225989378], [47.95571856364067, 1.0408360970316561], [47.772101336335034, 1.2331169613170476], [47.80865, 1.38591]],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_491506e250263afcbb5de1a626608941);
+        
+    
+            var poly_line_0657eec2ef20283ed3422caf558f91ff = L.polyline(
+                [[47.79569, 1.44973], [47.79569, 1.44973], [47.813933327799866, 1.4803354727175377], [47.823489408173245, 1.6090125887696485], [47.85767545569691, 1.6825972225989378], [47.95571856364067, 1.0408360970316561], [47.772101336335034, 1.2331169613170476], [47.79569, 1.44973]],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_491506e250263afcbb5de1a626608941);
+        
+    
+            var poly_line_22fdf21b25518405ce12606dda304369 = L.polyline(
+                [[47.79569, 1.44973], [47.79569, 1.44973], [47.815545652012965, 1.459662130936808], [47.79569, 1.44973]],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_491506e250263afcbb5de1a626608941);
+        
+    
+            var poly_line_188d14318f71dd07f79be06edd4b2942 = L.polyline(
+                [[47.834, 1.42053], [47.834, 1.42053], [47.772101336335034, 1.2331169613170476], [47.815545652012965, 1.459662130936808], [47.813933327799866, 1.4803354727175377], [47.834, 1.42053]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_491506e250263afcbb5de1a626608941);
+        
+</script>
+</html>

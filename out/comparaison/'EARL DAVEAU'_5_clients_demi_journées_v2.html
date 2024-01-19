@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9b57ec8877eb1a941a17e5557c3a0ed0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9b57ec8877eb1a941a17e5557c3a0ed0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9b57ec8877eb1a941a17e5557c3a0ed0 = L.map(
+                "map_9b57ec8877eb1a941a17e5557c3a0ed0",
+                {
+                    center: [47.79569, 1.44973],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8586618070b785af599663b263738c3f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_8586618070b785af599663b263738c3f.addTo(map_9b57ec8877eb1a941a17e5557c3a0ed0);
+        
+    
+            var marker_2a5c2df888236fd05657fd76c07ee7a5 = L.marker(
+                [47.79569, 1.44973],
+                {}
+            ).addTo(map_9b57ec8877eb1a941a17e5557c3a0ed0);
+        
+    
+            var icon_901d9b9cf1b81d640b0e66f652e573d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "seedling", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_2a5c2df888236fd05657fd76c07ee7a5.setIcon(icon_901d9b9cf1b81d640b0e66f652e573d1);
+        
+    
+        var popup_34c15db974043702656aebfc7d913180 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_440b65ea94b45863b72bd656fe4751c9 = $(`<div id="html_440b65ea94b45863b72bd656fe4751c9" style="width: 100.0%; height: 100.0%;">'EARL DAVEAU'	47.79569	1.44973</div>`)[0];
+                popup_34c15db974043702656aebfc7d913180.setContent(html_440b65ea94b45863b72bd656fe4751c9);
+            
+        
+
+        marker_2a5c2df888236fd05657fd76c07ee7a5.bindPopup(popup_34c15db974043702656aebfc7d913180)
+        ;
+
+        
+    
+    
+            var marker_e2db05dd6a9c0fb197508f7cf837ba83 = L.marker(
+                [47.86052470097425, 1.4628294258593013],
+                {}
+            ).addTo(map_9b57ec8877eb1a941a17e5557c3a0ed0);
+        
+    
+            var icon_5725e917b0c6e71f5eec96b9001c96a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "person", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e2db05dd6a9c0fb197508f7cf837ba83.setIcon(icon_5725e917b0c6e71f5eec96b9001c96a8);
+        
+    
+        var popup_bc7f58d2b115bf5c4b6ea3a8bd00fc89 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9187009e069fdb273f473493eb3bda53 = $(`<div id="html_9187009e069fdb273f473493eb3bda53" style="width: 100.0%; height: 100.0%;">client_nothing	47.86052470097425	1.4628294258593013	tour n°1	jeudi matin demande : 30.5</div>`)[0];
+                popup_bc7f58d2b115bf5c4b6ea3a8bd00fc89.setContent(html_9187009e069fdb273f473493eb3bda53);
+            
+        
+
+        marker_e2db05dd6a9c0fb197508f7cf837ba83.bindPopup(popup_bc7f58d2b115bf5c4b6ea3a8bd00fc89)
+        ;
+
+        
+    
+    
+            var marker_ec8f798104d594a78d215899e99863ec = L.marker(
+                [47.73379112624886, 1.2624544640118835],
+                {}
+            ).addTo(map_9b57ec8877eb1a941a17e5557c3a0ed0);
+        
+    
+            var icon_02c4851d014da389fe5cc8526e440452 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "person", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ec8f798104d594a78d215899e99863ec.setIcon(icon_02c4851d014da389fe5cc8526e440452);
+        
+    
+        var popup_322908c5726a2beba422964d5fb3ab89 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0dc7c208dc391bb37de5b55adbb5f5fd = $(`<div id="html_0dc7c208dc391bb37de5b55adbb5f5fd" style="width: 100.0%; height: 100.0%;">client_nothing	47.73379112624886	1.2624544640118835	tour n°2	lundi après-midi demande : 1.818</div>`)[0];
+                popup_322908c5726a2beba422964d5fb3ab89.setContent(html_0dc7c208dc391bb37de5b55adbb5f5fd);
+            
+        
+
+        marker_ec8f798104d594a78d215899e99863ec.bindPopup(popup_322908c5726a2beba422964d5fb3ab89)
+        ;
+
+        
+    
+    
+            var marker_3b740e0ab06dfc723b6f7c85aba76be6 = L.marker(
+                [47.78620900021447, 1.4933849283394665],
+                {}
+            ).addTo(map_9b57ec8877eb1a941a17e5557c3a0ed0);
+        
+    
+            var icon_66af71dcb5f2b440d7f47c858560a32f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "person", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_3b740e0ab06dfc723b6f7c85aba76be6.setIcon(icon_66af71dcb5f2b440d7f47c858560a32f);
+        
+    
+        var popup_d0274ffe92dd4d8f0d9e00cf915266e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af81602c54219ff50aac4b29adb6eacf = $(`<div id="html_af81602c54219ff50aac4b29adb6eacf" style="width: 100.0%; height: 100.0%;">client_nothing	47.78620900021447	1.4933849283394665	tour n°1	jeudi matin demande : 14.22</div>`)[0];
+                popup_d0274ffe92dd4d8f0d9e00cf915266e9.setContent(html_af81602c54219ff50aac4b29adb6eacf);
+            
+        
+
+        marker_3b740e0ab06dfc723b6f7c85aba76be6.bindPopup(popup_d0274ffe92dd4d8f0d9e00cf915266e9)
+        ;
+
+        
+    
+    
+            var marker_eb50d7e1daeb07b53f2989f3ec36009f = L.marker(
+                [47.91340673473829, 1.424261664996322],
+                {}
+            ).addTo(map_9b57ec8877eb1a941a17e5557c3a0ed0);
+        
+    
+            var icon_532bc7cd9909f002b1bd15a7051538ff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "person", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_eb50d7e1daeb07b53f2989f3ec36009f.setIcon(icon_532bc7cd9909f002b1bd15a7051538ff);
+        
+    
+        var popup_1bbb7a704b95c2a00a30d9e56264aac0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a4dc99cacc34971b738505f6e5d894aa = $(`<div id="html_a4dc99cacc34971b738505f6e5d894aa" style="width: 100.0%; height: 100.0%;">client_nothing	47.91340673473829	1.424261664996322	tour n°2	lundi après-midi demande : 3.164</div>`)[0];
+                popup_1bbb7a704b95c2a00a30d9e56264aac0.setContent(html_a4dc99cacc34971b738505f6e5d894aa);
+            
+        
+
+        marker_eb50d7e1daeb07b53f2989f3ec36009f.bindPopup(popup_1bbb7a704b95c2a00a30d9e56264aac0)
+        ;
+
+        
+    
+    
+            var poly_line_ea613385a4f7797aac3c8097d54d0889 = L.polyline(
+                [[47.79569, 1.44973], [47.79569, 1.44973], [47.86052470097425, 1.4628294258593013], [47.78620900021447, 1.4933849283394665], [47.79569, 1.44973]],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_9b57ec8877eb1a941a17e5557c3a0ed0);
+        
+    
+            var poly_line_64dfcb3eadb9935e313881ce8d470255 = L.polyline(
+                [[47.79569, 1.44973], [47.79569, 1.44973], [47.91340673473829, 1.424261664996322], [47.73379112624886, 1.2624544640118835], [47.79569, 1.44973]],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_9b57ec8877eb1a941a17e5557c3a0ed0);
+        
+</script>
+</html>

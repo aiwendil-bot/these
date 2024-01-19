@@ -152,7 +152,7 @@ function MTCVRPMTW_v2(instance::Instance_MTCVRPMTW_demi_journees)
     @constraint(model, [j in N[2:end], d in D], sum([xx[i,j,d] for i in N[2:end]]) <= x[1,j,d])
 
     @constraint(model, [d in D], sum([x[1,j,d] for j in N[2:end]] ) <= 1 + sum([xx[i,j,d] for i in N[2:end] for j in N[2:end]]))
-
+    set_silent(model)
     optimize!(model)
 
     function day(i)

@@ -1,6 +1,7 @@
 using PyCall, Random, DataFrames, CSV, StatsBase, Geodesy, DelimitedFiles, Distributions
 include("..\\..\\firstModel\\Producer.jl")
 include("..\\..\\firstModel_demi_journees\\Producer_demijournees.jl")
+include("..\\..\\demi_journees_mutualisation\\Producer_mutualisation.jl")
 
 function generateRandomClients(   
     producer::Producer,
@@ -91,8 +92,43 @@ function generateTimeWindows(nbOfGenerated::Int64, sizeOfWindows::Int64, maxOfWi
     res
 end
 
-#=
-producer = Producer(LatLon(47.347652435302734,0.6589514017105103),[[[600,1020]]],50,3)
+function generateDemands_mutualisation(producers::Vector{Producer_mutualisation}, 
+    producersOfClient::Vector{Producer_mutualisation},
+    capacity::Int64)::Vector{Float64}
+    
+    nbOfProducers = length(producersOfClient)
+    demand = zeros(Float64, length(producers))
 
-generateRandomClients(producer,5000,20,120,3,5)
-=#
+    for i in eachindex(demand)
+        if (producers[i] in producersOfClient)
+            demand[i] = rand() * capacity / nbOfProducers
+        end
+    end
+    demand
+end
+function generateRandomClients_mutualisation(  
+    producers::Vector{Producer_mutualisation},
+    producersPerClient::Vector{Vector{Producer_mutualisation}},
+    radiusRange::Vector{Int64},
+    nbOfGenerated::Int64,
+    maxOfWindows::Int64, 
+    nbOfDays::Int64)::Vector{Client_mutualisation}
+
+    clients = Vector{Client_mutualisation}(undef,nbOfGenerated)
+
+    for i in 1:nbOfGenerated
+
+        producer = rand(producers)
+        producerCoordinatesFloat = [producer.coordinates.lat, producer.coordinates.lon]
+        coordinates::Vector{LatLon{Float64}} = generatePointsWithinRadius(producerCoordinatesFloat, radiusRange, 1)
+        demand::Vector{Float64} = generateDemands_mutualisation(producers, producersPerClient[i],producer.capacity)
+        nbOfWindows = rand(1:maxOfWindows)
+        timeWindows::Vector{Int64} = sort(sample(1:(nbOfDays*2),nbOfWindows,replace = false))
+
+        clients[i] = Client_mutualisation(producersPerClient[i], coordinates[1], demand, timeWindows)
+
+    end
+
+    clients
+
+end

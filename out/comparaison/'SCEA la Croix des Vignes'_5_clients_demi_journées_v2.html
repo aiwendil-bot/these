@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f2504de3ac9dbea078d2465c61d6abbf {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f2504de3ac9dbea078d2465c61d6abbf" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f2504de3ac9dbea078d2465c61d6abbf = L.map(
+                "map_f2504de3ac9dbea078d2465c61d6abbf",
+                {
+                    center: [47.8228, 1.30242],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b381aacbe28e5fddbcd8d01db591a9b7 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_b381aacbe28e5fddbcd8d01db591a9b7.addTo(map_f2504de3ac9dbea078d2465c61d6abbf);
+        
+    
+            var marker_f76badadf15d4ff151133c9aa4f63020 = L.marker(
+                [47.8228, 1.30242],
+                {}
+            ).addTo(map_f2504de3ac9dbea078d2465c61d6abbf);
+        
+    
+            var icon_9dda23a921ac0e7b7ea10100197a0bb4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "seedling", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_f76badadf15d4ff151133c9aa4f63020.setIcon(icon_9dda23a921ac0e7b7ea10100197a0bb4);
+        
+    
+        var popup_15e10feb665aa8fa62b8bc688c7537dd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_52c9f5f8eeacddc5ff69761ef64a9bef = $(`<div id="html_52c9f5f8eeacddc5ff69761ef64a9bef" style="width: 100.0%; height: 100.0%;">'SCEA la Croix des Vignes'	47.8228	1.30242</div>`)[0];
+                popup_15e10feb665aa8fa62b8bc688c7537dd.setContent(html_52c9f5f8eeacddc5ff69761ef64a9bef);
+            
+        
+
+        marker_f76badadf15d4ff151133c9aa4f63020.bindPopup(popup_15e10feb665aa8fa62b8bc688c7537dd)
+        ;
+
+        
+    
+    
+            var marker_4084c5b454979b25f628e22d08fce042 = L.marker(
+                [47.78620900021447, 1.4933849283394665],
+                {}
+            ).addTo(map_f2504de3ac9dbea078d2465c61d6abbf);
+        
+    
+            var icon_a6622b281f350307930733a59d8aef6c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "person", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4084c5b454979b25f628e22d08fce042.setIcon(icon_a6622b281f350307930733a59d8aef6c);
+        
+    
+        var popup_a409655c04f222fe7388c75f9bdbe12d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac371f980383307628bd004554c9b080 = $(`<div id="html_ac371f980383307628bd004554c9b080" style="width: 100.0%; height: 100.0%;">client_nothing	47.78620900021447	1.4933849283394665	tour n°1	mercredi matin demande : 4.035</div>`)[0];
+                popup_a409655c04f222fe7388c75f9bdbe12d.setContent(html_ac371f980383307628bd004554c9b080);
+            
+        
+
+        marker_4084c5b454979b25f628e22d08fce042.bindPopup(popup_a409655c04f222fe7388c75f9bdbe12d)
+        ;
+
+        
+    
+    
+            var marker_8888c1426f5780dc6e5fba19b6d5ba1c = L.marker(
+                [47.91340673473829, 1.424261664996322],
+                {}
+            ).addTo(map_f2504de3ac9dbea078d2465c61d6abbf);
+        
+    
+            var icon_251c18c5ef67c05b48250d12f3d9a115 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "person", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8888c1426f5780dc6e5fba19b6d5ba1c.setIcon(icon_251c18c5ef67c05b48250d12f3d9a115);
+        
+    
+        var popup_b02106aeb02b2778ef62c42b4fd15d0c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d6adcf5314c7f33fd6308569cfda0ea = $(`<div id="html_8d6adcf5314c7f33fd6308569cfda0ea" style="width: 100.0%; height: 100.0%;">client_nothing	47.91340673473829	1.424261664996322	tour n°2	lundi après-midi demande : 8.336</div>`)[0];
+                popup_b02106aeb02b2778ef62c42b4fd15d0c.setContent(html_8d6adcf5314c7f33fd6308569cfda0ea);
+            
+        
+
+        marker_8888c1426f5780dc6e5fba19b6d5ba1c.bindPopup(popup_b02106aeb02b2778ef62c42b4fd15d0c)
+        ;
+
+        
+    
+    
+            var poly_line_3a2215ffcec74a5ec835fa24019c27d7 = L.polyline(
+                [[47.8228, 1.30242], [47.8228, 1.30242], [47.78620900021447, 1.4933849283394665], [47.8228, 1.30242]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_f2504de3ac9dbea078d2465c61d6abbf);
+        
+    
+            var poly_line_faa0868dd2605f66b6c6b21f81fd863a = L.polyline(
+                [[47.8228, 1.30242], [47.8228, 1.30242], [47.91340673473829, 1.424261664996322], [47.8228, 1.30242]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_f2504de3ac9dbea078d2465c61d6abbf);
+        
+</script>
+</html>
